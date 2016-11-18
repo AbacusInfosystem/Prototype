@@ -24,21 +24,23 @@
 
     <section class="content">
 
-        <div class="row">
-
-            <div class="col-xs-12">
-
-                <div class="box">
-
-                    <div class="box-body">
-
-                        <div class="row">
+<div class="nav-tabs-custom">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#tab_1" data-toggle="tab">Basic Details</a></li>
+              <li><a href="#tab_2" data-toggle="tab">Facilities</a></li>
+              <li><a href="#tab_3" data-toggle="tab">Pricing</a></li>
+			<li><a href="#tab_4" data-toggle="tab">Photos</a></li>
+             
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" id="tab_1">
+                <div class="row">
 
                             <div class="col-md-12">
 
                                 <form id="frmHotel">
 
-                                    <div class="col-md-3" style="background: rgba(0, 0, 0, 0.02); border-right: 1px solid #DDD; padding: 10px; height:550px;">
+                                    <div class="col-md-3" >
 
                                         <div class="block">
 
@@ -73,7 +75,7 @@
 
                                     </div>
 
-                                    <div class="col-md-3" style="background: rgba(0, 0, 0, 0.02); border-right: 1px solid #DDD; padding: 10px; height:550px;">
+                                    <div class="col-md-3" >
 
                                         <div class="block">
 
@@ -108,7 +110,7 @@
 
                                     </div>
 
-                                    <div class="col-md-3" style="background: rgba(0, 0, 0, 0.02); border-right: 1px solid #DDD; padding: 10px; height:550px;">
+                                    <div class="col-md-3" >
 
                                         <div class="block">
 
@@ -144,7 +146,7 @@
 
                                     </div>
 
-                                    <div class="col-md-3" style="background: rgba(0, 0, 0, 0.02); border-right: 1px solid #DDD; padding: 10px; height:550px;">
+                                    <div class="col-md-3" >
 
                                         <div class="block">
 
@@ -175,10 +177,25 @@
                                 </form>
 
                             </div>
+					<div class="col-md-12" style="padding-top: 20px; padding-left: 10px; padding-right: 10px;">
+
+                            <div class="btn-group">
+
+                                <button type="button" id="btnSaveHotel" class="btn btn-success active">Save</button>
+
+                                <button type="reset" id="btnCancel" class="btn btn-danger active">Reset</button>
+
+                                <button type="button" id="btnBack" class="btn btn-primary active">Back</button>
+                                
+                            </div>
 
                         </div>
 
-                        <div class="row">
+                        </div>
+              </div>
+              <!-- /.tab-pane -->
+              <div class="tab-pane" id="tab_2">
+              <div class="row">
                             <div class="col-xs-12">
                                 <div class="box box-solid">
                                     <div class="box-header with-border">
@@ -186,7 +203,9 @@
                                     </div>
                                     <!-- /.box-header -->
                                     <div class="box-body">
-                                        <div class="box-group" id="accordion">
+                                        <div class="box-group">
+										<div class="row">
+											<div class="col-md-4">
                                             <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
                                             <div class="panel box box-primary">
                                                 <div class="box-header with-border">
@@ -196,20 +215,20 @@
                                                         </a>
                                                     </h4>
                                                 </div>
-                                                <div id="collapseOne" class="panel-collapse collapse in">
+                                                
 
                                                     <div class="box-body">
 
                                                         <div class="row">
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkgrounds" name="Hotel.grounds">
                                                                     <label> Ground </label>
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkswimmingPool" name="Hotel.swimmingPool">
                                                                     <label> Swimming Pool </label>
@@ -220,14 +239,14 @@
 
                                                         <div class="row">
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="radio" id="rdstatus" name="Hotel.status">
                                                                     <label> Status </label>
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
 
                                                                 <div class="form-group">
                                                                     <input type="text" id="txtprice" class="form-control input-sm" name="Hotel.price" placeholder="Enter Price">
@@ -237,9 +256,11 @@
                                                         </div>
 
                                                     </div>
-                                                </div>
+                                               
                                             </div>
 
+												</div>
+											<div class="col-md-4">
                                             <div class="panel box box-primary">
                                                 <div class="box-header with-border">
                                                     <h4 class="box-title">
@@ -248,12 +269,12 @@
                                                         </a>
                                                     </h4>
                                                 </div>
-                                                <div id="collapseTwo" class="panel-collapse collapse">
+                                                
                                                     <div class="box-body">
 
                                                         <div class="row">
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
 
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkfitnessCenter" name="Hotel.fitnessCenter">
@@ -262,7 +283,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkspa" name="Hotel.spa">
                                                                     <label> Spa </label>
@@ -270,7 +291,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkhotTub" name="Hotel.hotTub">
                                                                     <label> HotTub </label>
@@ -278,7 +299,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkmassage" name="Hotel.massage">
                                                                     <label> Massage </label>
@@ -289,8 +310,11 @@
                                                         </div>
 
                                                     </div>
-                                                </div>
+                                                
                                             </div>
+
+													</div>
+											<div class="col-md-4">
 
                                             <div class="panel box box-primary">
                                                 <div class="box-header with-border">
@@ -300,12 +324,12 @@
                                                         </a>
                                                     </h4>
                                                 </div>
-                                                <div id="collapseThree" class="panel-collapse collapse">
+                                                
                                                     <div class="box-body">
 
                                                         <div class="row">
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
 
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkbar" name="Hotel.bar">
@@ -315,7 +339,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
 
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkrestaurant" name="Hotel.restaurant">
@@ -325,7 +349,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
 
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkcoffeeShop" name="Hotel.coffeeShop">
@@ -337,9 +361,14 @@
                                                         </div>
 
                                                     </div>
-                                                </div>
+                                                
                                             </div>
+										</div>
+											</div>
 
+											<div class="row">
+												
+											<div class="col-md-4">
                                             <div class="panel box box-primary">
                                                 <div class="box-header with-border">
                                                     <h4 class="box-title">
@@ -348,21 +377,21 @@
                                                         </a>
                                                     </h4>
                                                 </div>
-                                                <div id="collapseFour" class="panel-collapse collapse">
+                                               
                                                     <div class="box-body">
 
                                                         <div class="row">
 
                                                             <div class="row">
 
-                                                                <div class="col-md-3">
+                                                                <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <input type="checkbox" id="chkwifiAccess" name="Hotel.wifiAccess">
                                                                         <label> WIFI Access </label>
                                                                     </div>
                                                                 </div>
 
-                                                                <div class="col-md-3">
+                                                                <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <input type="checkbox" id="chklanAccess" name="Hotel.lanAccess">
                                                                         <label> LAN Access </label>
@@ -373,14 +402,14 @@
 
                                                             <div class="row">
 
-                                                                <div class="col-md-3">
+                                                                <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <input type="radio" id="rdstatus" name="Hotel.status">
                                                                         <label> Status </label>
                                                                     </div>
                                                                 </div>
 
-                                                                <div class="col-md-3">
+                                                                <div class="col-md-6">
 
                                                                     <div class="form-group">
                                                                         <input type="text" id="txtprice" class="form-control input-sm" name="Hotel.price" placeholder="Enter Price">
@@ -392,9 +421,10 @@
                                                         </div>
 
                                                     </div>
-                                                </div>
+                                                
                                             </div>
-
+												</div>
+											<div class="col-md-4">
                                             <div class="panel box box-primary">
                                                 <div class="box-header with-border">
                                                     <h4 class="box-title">
@@ -403,12 +433,12 @@
                                                         </a>
                                                     </h4>
                                                 </div>
-                                                <div id="collapseFive" class="panel-collapse collapse">
+                                               
                                                     <div class="box-body">
 
                                                         <div class="row">
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkparkingService" name="Hotel.parkingService">
                                                                     <label> Parking </label>
@@ -419,14 +449,14 @@
 
                                                         <div class="row">
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="radio" id="rdstatus" name="Hotel.status">
                                                                     <label> Status </label>
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
 
                                                                 <div class="form-group">
                                                                     <input type="text" id="txtprice" class="form-control input-sm" name="Hotel.price" placeholder="Enter Price">
@@ -436,9 +466,10 @@
                                                         </div>
 
                                                     </div>
-                                                </div>
+                                                
                                             </div>
-
+												</div>
+											<div class="col-md-4">
                                             <div class="panel box box-primary">
                                                 <div class="box-header with-border">
                                                     <h4 class="box-title">
@@ -447,12 +478,12 @@
                                                         </a>
                                                     </h4>
                                                 </div>
-                                                <div id="collapseSix" class="panel-collapse collapse">
+                                                
                                                     <div class="box-body">
 
                                                         <div class="row">
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
 
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkroomService" name="Hotel.roomService">
@@ -461,7 +492,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chklaundaryService" name="Hotel.laundaryService">
                                                                     <label> Laundary Service </label>
@@ -469,7 +500,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkairportShuttle" name="Hotel.airportShuttle">
                                                                     <label> Airport Shuttle </label>
@@ -477,7 +508,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkdryCleaning" name="Hotel.dryCleaning">
                                                                     <label> Dry Cleaning </label>
@@ -489,7 +520,7 @@
 
                                                         <div class="row">
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
 
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkexpressCheckIncheckOut" name="Hotel.expressCheckIncheckOut">
@@ -498,7 +529,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkmeetingsbanquetsFacilites" name="Hotel.meetingsbanquetsFacilites">
                                                                     <label> Meetings/Banquet Facilities </label>
@@ -506,7 +537,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkluggageStore" name="Hotel.luggageStore">
                                                                     <label> Luggage Store </label>
@@ -514,7 +545,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chk24roomService" name="Hotel.24roomService">
                                                                     <label> 24 Hour Room Service </label>
@@ -525,17 +556,35 @@
                                                         </div>
 
                                                     </div>
-                                                </div>
+                                               
                                             </div>
+												</div>
+										</div>
+
+										</div>
 
                                         </div>
                                     </div>
                                     <!-- /.box-body -->
                                 </div>
-                            </div>
-                        </div>
+				  <div class="col-md-12" style="padding-top: 20px; padding-left: 10px; padding-right: 10px;">
 
-                        <div class="row">
+                            <div class="btn-group">
+
+                                <button type="button" id="btnSaveHotel" class="btn btn-success active">Save</button>
+
+                                <button type="reset" id="btnCancel" class="btn btn-danger active">Reset</button>
+
+                                <button type="button" id="btnBack" class="btn btn-primary active">Back</button>
+                                
+                            </div>
+
+                        </div>
+                            </div>
+              </div>
+              <!-- /.tab-pane -->
+              <div class="tab-pane" id="tab_3">
+               <div class="row">
                             <div class="col-xs-12">
                                 <div class="box box-solid">
                                     <div class="box-header with-border">
@@ -683,7 +732,7 @@
                                                                     <label>Meal Code</label>
                                                                     <input type="text" id="txtmealCode" class="form-control input-sm" name="Hotel.mealCode" placeholder="Enter Meal Code">
                                                                 </div>
-                                                            </div>s
+                                                            </div>
 
                                                             <div class="col-md-3">
 
@@ -838,9 +887,12 @@
                                     <!-- /.box-body -->
                                 </div>
                             </div>
+				   
                         </div>
-
-                        <div class="row">
+              </div>
+              <!-- /.tab-pane -->
+				<div class="tab-pane" id="tab_4">
+               <div class="row">
 
                             <div class="col-xs-12">
 
@@ -903,29 +955,12 @@
                                 </div>
 
                             </div>
-
-                        <div class="col-md-12" style="padding-top: 20px; padding-left: 10px; padding-right: 10px;">
-
-                            <div class="btn-group">
-
-                                <button type="button" id="btnSaveHotel" class="btn btn-success active">Save</button>
-
-                                <button type="reset" id="btnCancel" class="btn btn-danger active">Reset</button>
-
-                                <button type="button" id="btnBack" class="btn btn-primary active">Back</button>
-                                
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                    <!-- /.box-body -->
-
-                </div>
-                <!-- /.box -->
+              </div>
 
             </div>
+            <!-- /.tab-content -->
+          </div>
+        
 
 
 
