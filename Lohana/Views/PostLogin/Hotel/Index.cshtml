@@ -24,225 +24,257 @@
 
     <section class="content">
 
-        <div class="row">
+        <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab_1" data-toggle="tab">Basic Details</a></li>
+                <li><a href="#tab_2" data-toggle="tab">Facilities</a></li>
+                <li><a href="#tab_3" data-toggle="tab">Pricing</a></li>
+                <li><a href="#tab_4" data-toggle="tab">Photos</a></li>
 
-            <div class="col-xs-12">
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab_1">
+                    <div class="row">
 
-                <div class="box">
+                        <div class="col-md-12">
 
-                    <div class="box-body">
+                            <form id="frmHotel">
 
-                        <div class="row">
+                                <div class="col-md-3">
 
-                            <div class="col-md-12">
+                                    <div class="block">
 
-                                <form id="frmHotel">
+                                        <h4 style="margin-top: 15px;">Primary Details.</h4>
 
-                                    <div class="col-md-3" style="background: rgba(0, 0, 0, 0.02); border-right: 1px solid #DDD; padding: 10px; height:550px;">
+                                        <label>Hotel Name</label>
+                                        <div class="form-group">
+                                            <input type="text" id="txthotelName" class="form-control input-sm" name="Hotel.hotelName" placeholder="Enter Name of the Hotel">
+                                        </div>
 
-                                        <div class="block">
+                                        <label>Star Category</label>
+                                        <div class="form-group">
+                                            <select id="drpstarCategory" class="form-control input-sm" name="Hotel.starCategory"><option>-Select starCategory-</option></select>
+                                        </div>
 
-                                            <h4 style="margin-top: 15px;">Primary Details.</h4>
+                                        <label>Nearest Airport</label>
+                                        <div class="form-group">
+                                            <input type="text" id="txtnearestAirport" class="form-control input-sm" name="Hotel.nearestAirport" placeholder="Enter Nearest Airport">
+                                        </div>
 
-                                            <label>Hotel Name</label>
-                                            <div class="form-group">
-                                                <input type="text" id="txthotelName" class="form-control input-sm" name="Hotel.hotelName" placeholder="Enter Name of the Hotel">
-                                            </div>
+                                        <label>Nearest Railway Station</label>
+                                        <div class="form-group">
+                                            <input type="text" id="txtnearestRailwayStation" class="form-control input-sm" name="Hotel.nearestRailwayStation" placeholder="Enter Nearest Railway Station">
+                                        </div>
 
-                                            <label>Star Category</label>
-                                            <div class="form-group">
-                                                <select id="drpstarCategory" class="form-control input-sm" name="Hotel.starCategory"><option>-Select starCategory-</option></select>
-                                            </div>
-
-                                            <label>Nearest Airport</label>
-                                            <div class="form-group">
-                                                <input type="text" id="txtnearestAirport" class="form-control input-sm" name="Hotel.nearestAirport" placeholder="Enter Nearest Airport">
-                                            </div>
-
-                                            <label>Nearest Railway Station</label>
-                                            <div class="form-group">
-                                                <input type="text" id="txtnearestRailwayStation" class="form-control input-sm" name="Hotel.nearestRailwayStation" placeholder="Enter Nearest Railway Station">
-                                            </div>
-
-                                            <label>Hotel Description</label>
-                                            <div class="form-group">
-                                                <textarea class="form-control input-sm" name="Hotel.hotelDescription" placeholder="Enter Hotel Description" maxlength="250"></textarea>
-                                            </div>
-
+                                        <label>Hotel Description</label>
+                                        <div class="form-group">
+                                            <textarea class="form-control input-sm" name="Hotel.hotelDescription" placeholder="Enter Hotel Description" maxlength="250"></textarea>
                                         </div>
 
                                     </div>
 
-                                    <div class="col-md-3" style="background: rgba(0, 0, 0, 0.02); border-right: 1px solid #DDD; padding: 10px; height:550px;">
+                                </div>
 
-                                        <div class="block">
+                                <div class="col-md-3">
 
-                                            <h4 style="margin-top: 15px;">Address Details.</h4>
+                                    <div class="block">
 
-                                            <label>Address</label>
-                                            <div class="form-group">
-                                                <textarea class="form-control input-sm" name="Hotel.address" placeholder="Enter Address" maxlength="250"> </textarea>
-                                            </div>
+                                        <h4 style="margin-top: 15px;">Address Details.</h4>
 
-                                            <label>City</label>
-                                            <div class="form-group">
-                                                <input type="text" id="txtcity" class="form-control input-sm" name="Hotel.city" placeholder="Enter City">
-                                            </div>
+                                        <label>Address</label>
+                                        <div class="form-group">
+                                            <textarea class="form-control input-sm" name="Hotel.address" placeholder="Enter Address" maxlength="250"> </textarea>
+                                        </div>
 
-                                            <label>State</label>
-                                            <div class="form-group">
-                                                <input type="text" id="txtstate" class="form-control input-sm" name="Hotel.state" placeholder="Enter State">
-                                            </div>
+                                        <label>City</label>
+                                        <div class="form-group">
+                                            <input type="text" id="txtcity" class="form-control input-sm" name="Hotel.city" placeholder="Enter City">
+                                        </div>
 
-                                            <label>Country</label>
-                                            <div class="form-group">
-                                                <input type="text" id="txtcountry" class="form-control input-sm" name="Hotel.country" placeholder="Enter Country">
-                                            </div>
+                                        <label>State</label>
+                                        <div class="form-group">
+                                            <input type="text" id="txtstate" class="form-control input-sm" name="Hotel.state" placeholder="Enter State">
+                                        </div>
 
-                                            <label>Pincode</label>
-                                            <div class="form-group">
-                                                <input type="text" id="txtpinCode" class="form-control input-sm" name="Hotel.pinCode" placeholder="Enter Pin code">
-                                            </div>
+                                        <label>Country</label>
+                                        <div class="form-group">
+                                            <input type="text" id="txtcountry" class="form-control input-sm" name="Hotel.country" placeholder="Enter Country">
+                                        </div>
 
+                                        <label>Pincode</label>
+                                        <div class="form-group">
+                                            <input type="text" id="txtpinCode" class="form-control input-sm" name="Hotel.pinCode" placeholder="Enter Pin code">
                                         </div>
 
                                     </div>
 
-                                    <div class="col-md-3" style="background: rgba(0, 0, 0, 0.02); border-right: 1px solid #DDD; padding: 10px; height:550px;">
+                                </div>
 
-                                        <div class="block">
+                                <div class="col-md-3">
 
-                                            <h4 style="margin-top: 15px;">Communication Details.</h4>
+                                    <div class="block">
 
-                                            <label>Mobile No</label>
-                                            <div class="form-group">
-                                                <input type="text" id="txtmobileNo" class="form-control input-sm" name="Hotel.mobileNo" placeholder="Enter Mobile Number">
-                                            </div>
+                                        <h4 style="margin-top: 15px;">Communication Details.</h4>
 
-                                            <label>Telephone No</label>
-                                            <div class="form-group">
-                                                <input type="text" id="txttelephoneNo" class="form-control input-sm" name="Hotel.telephoneNo" placeholder="Enter Telephone Number">
-                                            </div>
-
-                                            <label>Email Id</label>
-                                            <div class="form-group">
-                                                <input type="text" id="txtemailId" class="form-control input-sm" name="Hotel.emailId" placeholder="Enter Email Address">
-                                            </div>
-
-                                            <label>Fax No</label>
-                                            <div class="form-group">
-                                                <input type="text" id="txtfaxNo" class="form-control input-sm" name="Hotel.faxNo" placeholder="Enter Fax No">
-                                            </div>
-
-                                            <label>Website</label>
-                                            <div class="form-group">
-                                                <input type="text" id="txtwebsite" class="form-control input-sm" name="Hotel.website" placeholder="Enter Website">
-                                            </div>
-
-
+                                        <label>Mobile No</label>
+                                        <div class="form-group">
+                                            <input type="text" id="txtmobileNo" class="form-control input-sm" name="Hotel.mobileNo" placeholder="Enter Mobile Number">
                                         </div>
+
+                                        <label>Telephone No</label>
+                                        <div class="form-group">
+                                            <input type="text" id="txttelephoneNo" class="form-control input-sm" name="Hotel.telephoneNo" placeholder="Enter Telephone Number">
+                                        </div>
+
+                                        <label>Email Id</label>
+                                        <div class="form-group">
+                                            <input type="text" id="txtemailId" class="form-control input-sm" name="Hotel.emailId" placeholder="Enter Email Address">
+                                        </div>
+
+                                        <label>Fax No</label>
+                                        <div class="form-group">
+                                            <input type="text" id="txtfaxNo" class="form-control input-sm" name="Hotel.faxNo" placeholder="Enter Fax No">
+                                        </div>
+
+                                        <label>Website</label>
+                                        <div class="form-group">
+                                            <input type="text" id="txtwebsite" class="form-control input-sm" name="Hotel.website" placeholder="Enter Website">
+                                        </div>
+
 
                                     </div>
 
-                                    <div class="col-md-3" style="background: rgba(0, 0, 0, 0.02); border-right: 1px solid #DDD; padding: 10px; height:550px;">
+                                </div>
 
-                                        <div class="block">
+                                <div class="col-md-3">
 
-                                            <h4 style="margin-top: 15px;">Additional Details.</h4>
+                                    <div class="block">
 
-                                            <label>Top Attractions Near By</label>
-                                            <div class="form-group">
-                                                <textarea class="form-control input-sm" name="Hotel.topAttractionNearBy" placeholder="Enter Top Attraction Nearby" maxlength="250"></textarea>
-                                            </div>
+                                        <h4 style="margin-top: 15px;">Additional Details.</h4>
 
-
-                                            <label>Useful Hotel Stats</label>
-                                            <div class="form-group">
-                                                <textarea class="form-control input-sm" name="Hotel.stats" placeholder="Enter Hotel stats" maxlength="250"></textarea>
-                                            </div>
-
-
-                                            <label>Notes</label>
-                                            <div class="form-group">
-                                                <textarea class="form-control input-sm" name="Hotel.notes" placeholder="Enter Notes" maxlength="250"></textarea>
-                                            </div>
-
-
+                                        <label>Top Attractions Near By</label>
+                                        <div class="form-group">
+                                            <textarea class="form-control input-sm" name="Hotel.topAttractionNearBy" placeholder="Enter Top Attraction Nearby" maxlength="250"></textarea>
                                         </div>
+
+
+                                        <label>Useful Hotel Stats</label>
+                                        <div class="form-group">
+                                            <textarea class="form-control input-sm" name="Hotel.stats" placeholder="Enter Hotel stats" maxlength="250"></textarea>
+                                        </div>
+
+
+                                        <label>Notes</label>
+                                        <div class="form-group">
+                                            <textarea class="form-control input-sm" name="Hotel.notes" placeholder="Enter Notes" maxlength="250"></textarea>
+                                        </div>
+
 
                                     </div>
 
-                                </form>
+                                </div>
+
+                            </form>
+
+                        </div>
+                        <div class="col-md-12" style="padding-top: 20px; padding-left: 10px; padding-right: 10px;">
+
+                            <div class="btn-group">
+
+                                <button type="button" id="btnSaveHotel" class="btn btn-success active">Save</button>
+
+                                <button type="reset" id="btnCancel" class="btn btn-danger active">Reset</button>
+
+                                <button type="button" id="btnBack" class="btn btn-primary active">Back</button>
 
                             </div>
 
                         </div>
 
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="box box-solid">
-                                    <div class="box-header with-border">
-                                        <h3 class="box-title">Facilities Provided</h3>
-                                    </div>
-                                    <!-- /.box-header -->
-                                    <div class="box-body">
-                                        <div class="box-group" id="accordion">
-                                            <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
-                                            <div class="panel box box-primary">
-                                                <div class="box-header with-border">
-                                                    <h4 class="box-title">
-                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                                            Outdoor
-                                                        </a>
-                                                    </h4>
-                                                </div>
-                                                <div id="collapseOne" class="panel-collapse collapse in">
+                    </div>
+                </div>
+                <!-- /.tab-pane -->
+                <div class="tab-pane" id="tab_2">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="box box-solid">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Facilities Provided</h3>
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    <div class="box-group">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+                                                <div class="panel box box-primary">
+                                                    <div class="box-header with-border">
+                                                        <h4 class="box-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                                Outdoor
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+
 
                                                     <div class="box-body">
 
                                                         <div class="row">
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkgrounds" name="Hotel.grounds">
                                                                     <label> Ground </label>
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkswimmingPool" name="Hotel.swimmingPool">
                                                                     <label> Swimming Pool </label>
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                        </div>
 
-                                                                <div class="form-group">                                                                  
-                                                                    <input type="text" id="txtprice" class="form-control input-sm" name="Hotel.price" placeholder="Enter OutDoor Price">
+                                                        <div class="row">
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <input type="radio" id="rdstatus" name="Hotel.status">
+                                                                    <label> Status </label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+                                                                    <input type="text" id="txtprice" class="form-control input-sm" name="Hotel.price" placeholder="Enter Price">
                                                                 </div>
                                                             </div>
 
                                                         </div>
 
                                                     </div>
-                                                </div>
-                                            </div>
 
-                                            <div class="panel box box-primary">
-                                                <div class="box-header with-border">
-                                                    <h4 class="box-title">
-                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                                            Activities
-                                                        </a>
-                                                    </h4>
                                                 </div>
-                                                <div id="collapseTwo" class="panel-collapse collapse">
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="panel box box-primary">
+                                                    <div class="box-header with-border">
+                                                        <h4 class="box-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                                                Activities
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+
                                                     <div class="box-body">
 
                                                         <div class="row">
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
 
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkfitnessCenter" name="Hotel.fitnessCenter">
@@ -251,7 +283,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkspa" name="Hotel.spa">
                                                                     <label> Spa </label>
@@ -259,7 +291,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkhotTub" name="Hotel.hotTub">
                                                                     <label> HotTub </label>
@@ -267,7 +299,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkmassage" name="Hotel.massage">
                                                                     <label> Massage </label>
@@ -278,23 +310,26 @@
                                                         </div>
 
                                                     </div>
-                                                </div>
-                                            </div>
 
-                                            <div class="panel box box-primary">
-                                                <div class="box-header with-border">
-                                                    <h4 class="box-title">
-                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                                            Dining
-                                                        </a>
-                                                    </h4>
                                                 </div>
-                                                <div id="collapseThree" class="panel-collapse collapse">
+
+                                            </div>
+                                            <div class="col-md-4">
+
+                                                <div class="panel box box-primary">
+                                                    <div class="box-header with-border">
+                                                        <h4 class="box-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                                                Dining
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+
                                                     <div class="box-body">
 
                                                         <div class="row">
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
 
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkbar" name="Hotel.bar">
@@ -304,7 +339,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
 
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkrestaurant" name="Hotel.restaurant">
@@ -314,7 +349,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
 
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkcoffeeShop" name="Hotel.coffeeShop">
@@ -326,42 +361,58 @@
                                                         </div>
 
                                                     </div>
+
                                                 </div>
                                             </div>
+                                        </div>
 
-                                            <div class="panel box box-primary">
-                                                <div class="box-header with-border">
-                                                    <h4 class="box-title">
-                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                                                            Internet
-                                                        </a>
-                                                    </h4>
-                                                </div>
-                                                <div id="collapseFour" class="panel-collapse collapse">
+                                        <div class="row">
+
+                                            <div class="col-md-4">
+                                                <div class="panel box box-primary">
+                                                    <div class="box-header with-border">
+                                                        <h4 class="box-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                                                Internet
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+
                                                     <div class="box-body">
 
                                                         <div class="row">
 
                                                             <div class="row">
 
-                                                                <div class="col-md-3">
+                                                                <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <input type="checkbox" id="chkwifiAccess" name="Hotel.wifiAccess">
                                                                         <label> WIFI Access </label>
                                                                     </div>
                                                                 </div>
 
-                                                                <div class="col-md-3">
+                                                                <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <input type="checkbox" id="chklanAccess" name="Hotel.lanAccess">
                                                                         <label> LAN Access </label>
                                                                     </div>
                                                                 </div>
 
+                                                            </div>
 
-                                                                <div class="col-md-3">
+                                                            <div class="row">
+
+                                                                <div class="col-md-6">
                                                                     <div class="form-group">
-                                                                        <input type="text" id="txtprice" class="form-control input-sm" name="Hotel.price" placeholder="Enter Internet Price">
+                                                                        <input type="radio" id="rdstatus" name="Hotel.status">
+                                                                        <label> Status </label>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6">
+
+                                                                    <div class="form-group">
+                                                                        <input type="text" id="txtprice" class="form-control input-sm" name="Hotel.price" placeholder="Enter Price">
                                                                     </div>
                                                                 </div>
 
@@ -370,59 +421,69 @@
                                                         </div>
 
                                                     </div>
+
                                                 </div>
                                             </div>
+                                            <div class="col-md-4">
+                                                <div class="panel box box-primary">
+                                                    <div class="box-header with-border">
+                                                        <h4 class="box-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                                                Parking
+                                                            </a>
+                                                        </h4>
+                                                    </div>
 
-                                            <div class="panel box box-primary">
-                                                <div class="box-header with-border">
-                                                    <h4 class="box-title">
-                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-                                                            Parking
-                                                        </a>
-                                                    </h4>
-                                                </div>
-                                                <div id="collapseFive" class="panel-collapse collapse">
                                                     <div class="box-body">
 
                                                         <div class="row">
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkparkingService" name="Hotel.parkingService">
                                                                     <label> Parking </label>
                                                                 </div>
                                                             </div>
 
+                                                        </div>
 
-                                                            <div class="col-md-3">
+                                                        <div class="row">
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <input type="radio" id="rdstatus" name="Hotel.status">
+                                                                    <label> Status </label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
 
                                                                 <div class="form-group">
-                                                                    <input type="text" id="txtprice" class="form-control input-sm" name="Hotel.price" placeholder="Enter Parking Price">
+                                                                    <input type="text" id="txtprice" class="form-control input-sm" name="Hotel.price" placeholder="Enter Price">
                                                                 </div>
                                                             </div>
 
                                                         </div>
 
-                                                      
-
                                                     </div>
+
                                                 </div>
                                             </div>
+                                            <div class="col-md-4">
+                                                <div class="panel box box-primary">
+                                                    <div class="box-header with-border">
+                                                        <h4 class="box-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                                                                Services
+                                                            </a>
+                                                        </h4>
+                                                    </div>
 
-                                            <div class="panel box box-primary">
-                                                <div class="box-header with-border">
-                                                    <h4 class="box-title">
-                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
-                                                            Services
-                                                        </a>
-                                                    </h4>
-                                                </div>
-                                                <div id="collapseSix" class="panel-collapse collapse">
                                                     <div class="box-body">
 
                                                         <div class="row">
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
 
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkroomService" name="Hotel.roomService">
@@ -431,7 +492,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chklaundaryService" name="Hotel.laundaryService">
                                                                     <label> Laundary Service </label>
@@ -439,7 +500,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkairportShuttle" name="Hotel.airportShuttle">
                                                                     <label> Airport Shuttle </label>
@@ -447,7 +508,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkdryCleaning" name="Hotel.dryCleaning">
                                                                     <label> Dry Cleaning </label>
@@ -459,7 +520,7 @@
 
                                                         <div class="row">
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
 
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkexpressCheckIncheckOut" name="Hotel.expressCheckIncheckOut">
@@ -468,7 +529,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkmeetingsbanquetsFacilites" name="Hotel.meetingsbanquetsFacilites">
                                                                     <label> Meetings/Banquet Facilities </label>
@@ -476,7 +537,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chkluggageStore" name="Hotel.luggageStore">
                                                                     <label> Luggage Store </label>
@@ -484,7 +545,7 @@
 
                                                             </div>
 
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <input type="checkbox" id="chk24roomService" name="Hotel.24roomService">
                                                                     <label> 24 Hour Room Service </label>
@@ -495,399 +556,17 @@
                                                         </div>
 
                                                     </div>
-                                                </div>
-                                            </div>
 
-                                        </div>
-                                    </div>
-                                    <!-- /.box-body -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="box box-solid">
-                                    <div class="box-header with-border">
-                                        <h3 class="box-title">Pricing</h3>
-                                    </div>
-                                    <!-- /.box-header -->
-                                    <div class="box-body">
-                                        <div class="box-group" id="accordion">
-                                            <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
-                                            <div class="panel box box-primary">
-                                                <div class="box-header with-border">
-                                                    <h4 class="box-title">
-                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
-                                                            Room
-                                                        </a>
-                                                    </h4>
-                                                </div>
-                                                <div id="collapseSeven" class="panel-collapse collapse in">
-                                                    <div class="box-body">
-
-                                                        <div class="row">
-
-                                                            <div class="col-md-2">
-                                                                <div class="form-group">
-                                                                    <label>Room Type</label>
-                                                                    <input type="text" id="txtroomType" class="form-control input-sm" name="Hotel.roomType" placeholder="Enter Room Type">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-2">
-                                                                <div class="form-group">
-                                                                    <label>No of Guests</label>
-                                                                    <input type="text" id="txtnoOfGuests" class="form-control input-sm" name="Hotel.noOfGuests" placeholder="Enter Number of Guests">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-2">
-                                                                <div class="form-group">
-                                                                    <label>Bed Type</label>
-                                                                    <input type="text" id="txtbedType" class="form-control input-sm" name="Hotel.bedType" placeholder="Enter Bed Type">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-2">
-
-                                                                <div class="form-group">
-                                                                    <label>CheckIn / CheckOut</label>
-                                                                    <input type="text" id="txtcheckIncheckOut" class="form-control input-sm" name="Hotel.checkIncheckOut" placeholder="Enter CheckIn / checkOut">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-2">
-
-                                                                <div class="form-group">
-                                                                    <label>Room Price</label>
-                                                                    <input type="text" id="txtroomprice" class="form-control input-sm" name="Hotel.roomprice" placeholder="Enter Room Price">
-                                                                </div>
-                                                            </div>
-
-                                                          
-
-                                                            <div class="col-md-1">
-                                                                <div class="form-group">
-                                                                    <label> Extra Bed </label>
-                                                                    <input type="checkbox" id="chkextraBed" name="Hotel.extraBed">
-                                                                </div>
-
-                                                            </div>
-
-                                                            <div class="col-md-1">
-                                                                <div class="form-group">
-                                                                    <br>
-                                                                    <button type="button" id="btnAddRoom" class="btn btn-default bg-blue">+</button>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-
-                                                        <div class="row">
-
-                                                            <div class="table-responsive" style="width:100%; margin: 50px 0;">
-                                                                @*<input type="hidden" id="hdnIsEditBrandDetails" value="false" />
-                                                                    <input type="hidden" id="hdnRowIdspecific" value="0" />*@
-                                                                <table class="table table-bordered" id="tblRoomDetails">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>Room Type</th>
-                                                                            <th>No Of Guests</th>
-                                                                            <th>Bed Type</th>
-                                                                            <th>CheckIn / CheckOut</th>
-                                                                            <th>Room Price</th>
-                                                                            <th>Extra Bed</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Deluxe Room</td>
-                                                                            <td>4 Guests</td>
-                                                                            <td>Ortho Plus</td>
-                                                                            <td>10am to 6pm</td>
-                                                                            <td>1000</td>
-                                                                            <td>Yes</td>
-                                                                            <td>Edit/Delete</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Wooden Flower Room</td>
-                                                                            <td>2 Guests</td>
-                                                                            <td>King Size</td>
-                                                                            <td>8pm to 4pm</td>
-                                                                            <td>1500</td>
-                                                                            <td>No</td>
-                                                                            <td>Edit/Delete</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Warm and Cozy Room</td>
-                                                                            <td>3 Guests</td>
-                                                                            <td>Queen Size</td>
-                                                                            <td>11am to 11am</td>
-                                                                            <td>1050</td>
-                                                                            <td>Yes</td>
-                                                                            <td>Edit/Delete</td>
-                                                                        </tr>
-
-                                                                    </thead>
-
-                                                                    <tbody></tbody>
-                                                                </table>
-                                                                @*<label id="hdnBrand_Validation" style="display:none"><span style="color:red" id="Brand_Message"></span></label>*@
-
-                                                            </div>
-
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="panel box box-primary">
-                                                <div class="box-header with-border">
-                                                    <h4 class="box-title">
-                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
-                                                            Meal
-                                                        </a>
-                                                    </h4>
-                                                </div>
-                                                <div id="collapseEight" class="panel-collapse collapse">
-                                                    <div class="box-body">
-
-                                                        <div class="row">
-
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label>Meal Type</label>
-                                                                    <input type="text" id="txtmealType" class="form-control input-sm" name="Hotel.mealType" placeholder="Enter Meal Type">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-3">
-
-                                                                <div class="form-group">
-                                                                    <label>Meal Code</label>
-                                                                    <input type="text" id="txtmealCode" class="form-control input-sm" name="Hotel.mealCode" placeholder="Enter Meal Code">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-3">
-
-                                                                <div class="form-group">
-                                                                    <label>Meal Price</label>
-                                                                    <input type="text" id="txtmealPrice" class="form-control input-sm" name="Hotel.mealPrice" placeholder="Enter Meal Price">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-1">
-                                                                <div class="form-group">
-                                                                    <br>
-                                                                    <button type="button" id="btnAddRoom" class="btn btn-default bg-blue">+</button>
-                                                                </div>
-                                                            </div>
-
-
-                                                        </div>
-
-                                                        <div class="row">
-
-                                                            <div class="table-responsive" style="width:100%; margin: 50px 0;">
-
-                                                                <table class="table table-bordered" id="tblMealDetails">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>Meal Type</th>
-                                                                            <th>Meal Code</th>
-                                                                            <th>Meal Price</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Lunch / Breakfast</td>
-                                                                            <td>ABBSLT</td>
-                                                                            <td>1000</td>
-                                                                            <td>Edit/Delete</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Lunch / Dinner</td>
-                                                                            <td>MDFGD</td>
-                                                                            <td>1500</td>
-                                                                            <td>Edit/Delete</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Lunch / Breakfast / Dinner</td>
-                                                                            <td>HHDGHHS</td>
-                                                                            <td>1050</td>
-                                                                            <td>Edit/Delete</td>
-                                                                        </tr>
-
-                                                                    </thead>
-
-                                                                    <tbody></tbody>
-                                                                </table>
-                                                            </div>
-
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="panel box box-primary">
-                                                <div class="box-header with-border">
-                                                    <h4 class="box-title">
-                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
-                                                            Vehicle
-                                                        </a>
-                                                    </h4>
-                                                </div>
-                                                <div id="collapseNine" class="panel-collapse collapse">
-                                                    <div class="box-body">
-
-                                                        <div class="row">
-
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label>Vehicle Type</label>
-                                                                    <input type="text" id="txtvehicleType" class="form-control input-sm" name="Hotel.vehicleType" placeholder="Enter Vehicle Type">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-3">
-
-                                                                <div class="form-group">
-                                                                    <label>Vehicle Name</label>
-                                                                    <input type="text" id="txtvehicleName" class="form-control input-sm" name="Hotel.vehicleName" placeholder="Enter Vehicle Name">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-3">
-
-                                                                <div class="form-group">
-                                                                    <label>Vehicle Price</label>
-                                                                    <input type="text" id="txtvehiclePrice" class="form-control input-sm" name="Hotel.vehiclePrice" placeholder="Enter Vehicle Price">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-1">
-                                                                <div class="form-group">
-                                                                    <br>
-                                                                    <button type="button" id="btnAddRoom" class="btn btn-default bg-blue">+</button>
-                                                                </div>
-                                                            </div>
-
-
-                                                        </div>
-
-                                                        <div class="row">
-
-                                                            <div class="table-responsive" style="width:100%; margin: 50px 0;">
-
-                                                                <table class="table table-bordered" id="tblVehicleDetails">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>Vehicle Type</th>
-                                                                            <th>Vehicle Name</th>
-                                                                            <th>Vehicle Price</th>
-                                                                            <th>Action</th>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Car</td>
-                                                                            <td>Honda City</td>
-                                                                            <td>9000</td>
-                                                                            <td>Edit/Delete</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Bus</td>
-                                                                            <td>Volvo</td>
-                                                                            <td>20000</td>
-                                                                            <td>Edit/Delete</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>van</td>
-                                                                            <td>abcd</td>
-                                                                            <td>10500</td>
-                                                                            <td>Edit/Delete</td>
-                                                                        </tr>
-
-                                                                    </thead>
-
-                                                                    <tbody></tbody>
-                                                                </table>
-                                                            </div>
-
-                                                        </div>
-
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+
                                     </div>
-                                    <!-- /.box-body -->
+
                                 </div>
                             </div>
+                            <!-- /.box-body -->
                         </div>
-
-                        <div class="row">
-
-                            <div class="col-xs-12">
-
-                                <div class="col-md-3">
-
-                                    <label>Exterior View</label>
-
-                                    <div class="form-group">
-                                        <input type="file" id="imgUploadexteriorView" name="Hotel.exteriorView" style="margin-top:15px;margin-bottom:30px;" multiple="multiple">
-                                    </div>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-success active" id="btnUploadexteriorView">UploadexteriorView</button>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-3">
-
-                                    <label>Reception/ Lobby</label>
-
-
-                                    <div class="form-group">
-                                        <input type="file" id="imgUploadreception/loby" name="Hotel.reception/loby" style="margin-top:15px;margin-bottom:30px;" multiple="multiple">
-                                    </div>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-success active" id="btnUploadreception/loby">Uploadreception/loby</button>
-                                    </div>
-
-
-                                </div>
-
-                                <div class="col-md-3">
-
-                                    <label>Room Type 1</label>
-
-                                    <div class="form-group">
-                                        <input type="file" id="imgUploadroomType1" name="Hotel.roomType1" style="margin-top:15px;margin-bottom:30px;" multiple="multiple">
-                                    </div>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-success active" id="btnUploadroomType1">UploadroomType1</button>
-                                    </div>
-
-
-                                </div>
-
-                                <div class="row">
-
-                                    <label>Room Type 2</label>
-
-                                    <div class="form-group">
-                                        <input type="file" id="imgUploadroomType2" name="Hotel.roomType2" style="margin-top:15px;margin-bottom:30px;" multiple="multiple">
-                                    </div>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-success active" id="btnUploadroomType2">UploadroomType2</button>
-                                    </div>
-
-
-                                </div>
-
-                                </div>
-
-                            </div>
-
                         <div class="col-md-12" style="padding-top: 20px; padding-left: 10px; padding-right: 10px;">
 
                             <div class="btn-group">
@@ -897,24 +576,359 @@
                                 <button type="reset" id="btnCancel" class="btn btn-danger active">Reset</button>
 
                                 <button type="button" id="btnBack" class="btn btn-primary active">Back</button>
-                                
+
                             </div>
 
                         </div>
-
-
                     </div>
-                    <!-- /.box-body -->
-
                 </div>
-                <!-- /.box -->
+                <!-- /.tab-pane -->
+                <div class="tab-pane" id="tab_3">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="box box-solid">
+                                <div class="box-header with-border">
+                                    <h3 class="box-title">Pricing</h3>
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    <div class="box-group" id="accordion">
+                                        <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+                                        <div class="panel box box-primary">
+                                            <div class="box-header with-border">
+                                                <h4 class="box-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                                                        Room
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseSeven" class="panel-collapse collapse in">
+                                                <div class="box-body">
 
+                                                    <div class="row">
+
+                                                        <div class="col-md-2">
+                                                            <div class="form-group">
+                                                                <label>Room Type</label>
+                                                                <input type="text" id="txtroomType" class="form-control input-sm" name="Hotel.roomType" placeholder="Enter Room Type">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-2">
+                                                            <div class="form-group">
+                                                                <label>No of Guests</label>
+                                                                <input type="text" id="txtnoOfGuests" class="form-control input-sm" name="Hotel.noOfGuests" placeholder="Enter Number of Guests">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-2">
+                                                            <div class="form-group">
+                                                                <label>Bed Type</label>
+                                                                <input type="text" id="txtbedType" class="form-control input-sm" name="Hotel.bedType" placeholder="Enter Bed Type">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-2">
+
+                                                            <div class="form-group">
+                                                                <label>Room Price</label>
+                                                                <input type="text" id="txtroomprice" class="form-control input-sm" name="Hotel.roomprice" placeholder="Enter Room Price">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-1">
+                                                            <div class="form-group">
+                                                                <label> Extra Bed </label>
+                                                                <input type="checkbox" id="chkextraBed" name="Hotel.extraBed">
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="col-md-1">
+                                                            <div class="form-group">
+                                                                <br>
+                                                                <button type="button" id="btnAddRoom" class="btn btn-default bg-blue">+</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="row">
+
+                                                        <div class="table-responsive" style="width:100%; margin: 50px 0;">
+                                                            @*<input type="hidden" id="hdnIsEditBrandDetails" value="false" />
+                                                                <input type="hidden" id="hdnRowIdspecific" value="0" />*@
+                                                            <table class="table table-bordered" id="tblRoomDetails">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Room Type</th>
+                                                                        <th>No Of Guests</th>
+                                                                        <th>Bed Type</th>
+                                                                        <th>Room Price</th>
+                                                                        <th>Extra Bed</th>
+                                                                        <th>Action</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Deluxe Room</td>
+                                                                        <td>4 Guests</td>
+                                                                        <td>Ortho Plus</td>
+                                                                        <td>1000</td>
+                                                                        <td>Yes</td>
+                                                                        <td>Edit/Delete</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Wooden Flower Room</td>
+                                                                        <td>2 Guests</td>
+                                                                        <td>King Size</td>
+                                                                        <td>1500</td>
+                                                                        <td>No</td>
+                                                                        <td>Edit/Delete</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Warm and Cozy Room</td>
+                                                                        <td>3 Guests</td>
+                                                                        <td>Queen Size</td>
+                                                                        <td>1050</td>
+                                                                        <td>Yes</td>
+                                                                        <td>Edit/Delete</td>
+                                                                    </tr>
+
+                                                                </thead>
+
+                                                                <tbody></tbody>
+                                                            </table>
+                                                            @*<label id="hdnBrand_Validation" style="display:none"><span style="color:red" id="Brand_Message"></span></label>*@
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel box box-primary">
+                                            <div class="box-header with-border">
+                                                <h4 class="box-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+                                                        Meal
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseEight" class="panel-collapse collapse">
+                                                <div class="box-body">
+
+                                                    <div class="row">
+
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Meal Type</label>
+                                                                <input type="text" id="txtmealType" class="form-control input-sm" name="Hotel.mealType" placeholder="Enter Meal Type">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-3">
+
+                                                            <div class="form-group">
+                                                                <label>Meal Code</label>
+                                                                <input type="text" id="txtmealCode" class="form-control input-sm" name="Hotel.mealCode" placeholder="Enter Meal Code">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-3">
+
+                                                            <div class="form-group">
+                                                                <label>Meal Price</label>
+                                                                <input type="text" id="txtmealPrice" class="form-control input-sm" name="Hotel.mealPrice" placeholder="Enter Meal Price">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-1">
+                                                            <div class="form-group">
+                                                                <br>
+                                                                <button type="button" id="btnAddRoom" class="btn btn-default bg-blue">+</button>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+
+                                                    <div class="row">
+
+                                                        <div class="table-responsive" style="width:100%; margin: 50px 0;">
+
+                                                            <table class="table table-bordered" id="tblMealDetails">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Meal Type</th>
+                                                                        <th>Meal Code</th>
+                                                                        <th>Meal Price</th>
+                                                                        <th>Action</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Lunch / Breakfast</td>
+                                                                        <td>ABBSLT</td>
+                                                                        <td>1000</td>
+                                                                        <td>Edit/Delete</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Lunch / Dinner</td>
+                                                                        <td>MDFGD</td>
+                                                                        <td>1500</td>
+                                                                        <td>Edit/Delete</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Lunch / Breakfast / Dinner</td>
+                                                                        <td>HHDGHHS</td>
+                                                                        <td>1050</td>
+                                                                        <td>Edit/Delete</td>
+                                                                    </tr>
+
+                                                                </thead>
+
+                                                                <tbody></tbody>
+                                                            </table>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel box box-primary">
+                                            <div class="box-header with-border">
+                                                <h4 class="box-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+                                                        Vehicle
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseNine" class="panel-collapse collapse">
+                                                <div class="box-body">
+
+                                                    <div class="row">
+
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Vehicle Type</label>
+                                                                <input type="text" id="txtvehicleType" class="form-control input-sm" name="Hotel.vehicleType" placeholder="Enter Vehicle Type">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Vehicle Name</label>
+                                                                <input type="text" id="txtvehicleName" class="form-control input-sm" name="Hotel.vehicleName" placeholder="Enter Vehicle Name">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-3">
+                                                            <div class="form-group">
+                                                                <label>Vehicle Price</label>
+                                                                <input type="text" id="txtvehiclePrice" class="form-control input-sm" name="Hotel.vehiclePrice" placeholder="Enter Vehicle Price">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-1">
+                                                            <div class="form-group">
+                                                                <br>
+                                                                <button type="button" id="btnAddRoom" class="btn btn-default bg-blue">+</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+
+                                                        <div class="table-responsive" style="width:100%; margin: 50px 0;">
+
+                                                            <table class="table table-bordered" id="tblVehicleDetails">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Vehicle Type</th>
+                                                                        <th>Vehicle Name</th>
+                                                                        <th>Vehicle Price</th>
+                                                                        <th>Action</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Car</td>
+                                                                        <td>Honda City</td>
+                                                                        <td>9000</td>
+                                                                        <td>Edit/Delete</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Bus</td>
+                                                                        <td>Volvo</td>
+                                                                        <td>20000</td>
+                                                                        <td>Edit/Delete</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>van</td>
+                                                                        <td>abcd</td>
+                                                                        <td>10500</td>
+                                                                        <td>Edit/Delete</td>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody></tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.tab-pane -->
+                <div class="tab-pane" id="tab_4">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="col-md-3">
+                                <label>Exterior View</label>
+                                <div class="form-group">
+                                    <input type="file" id="imgUploadexteriorView" name="Hotel.exteriorView" style="margin-top:15px;margin-bottom:30px;" multiple="multiple">
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-success active" id="btnUploadexteriorView">UploadexteriorView</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label>Reception/ Lobby</label>
+                                <div class="form-group">
+                                    <input type="file" id="imgUploadreception/loby" name="Hotel.reception/loby" style="margin-top:15px;margin-bottom:30px;" multiple="multiple">
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-success active" id="btnUploadreception/loby">Uploadreception/loby</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label>Room Type 1</label>
+                                <div class="form-group">
+                                    <input type="file" id="imgUploadroomType1" name="Hotel.roomType1" style="margin-top:15px;margin-bottom:30px;" multiple="multiple">
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-success active" id="btnUploadroomType1">UploadroomType1</button>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label>Room Type 2</label>
+                                <div class="form-group">
+                                    <input type="file" id="imgUploadroomType2" name="Hotel.roomType2" style="margin-top:15px;margin-bottom:30px;" multiple="multiple">
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-success active" id="btnUploadroomType2">UploadroomType2</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-
+            <!-- /.tab-content -->
         </div>
 
     </section>
-
 </div>

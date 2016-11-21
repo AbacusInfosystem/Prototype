@@ -1,0 +1,222 @@
+﻿
+
+<div class="content-wrapper">
+
+    @{Html.RenderPartial("_ServerMessage");}
+
+    <!-- Content Header (Page header) -->
+
+    <section class="content-header">
+
+        <h1>
+            Package
+
+            <small>Create / Update Page</small>
+        </h1>
+
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i>Master</a></li>
+            <li class="active">Package</li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+
+    <section class="content">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">Package</h3>
+            </div>
+            <div class="box-body">
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Package Code</label><input type="text" id="txtpackageCode" class="form-control input-sm" name="Hotel.packageCode" placeholder="Enter Package Code">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Category</label><select id="drpcategory" class="form-control input-sm" name="Hotel.category" ><option value="">-Select -category-</option></select>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Sub Category</label><select id="drpsubCategory" class="form-control input-sm" name="Hotel.subCategory" ><option value>-Select -subCategory-</option></select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Package Name</label><input type="text" id="txtpackageName" class="form-control input-sm" name="Hotel.packageName" placeholder="Enter Package Name">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Package Duration</label><input type="text" id="txtpackageDuration" class="form-control input-sm" name="Hotel.packageDuration" placeholder="Enter Package Duration">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Place To Visit </label><input type="text" id="txtplaceToVisit" class="form-control input-sm" name="Hotel.placeToVisit" placeholder="Enter Place To Visit ">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Adventure</label><textarea class="form-control input-sm" name="Hotel.adventure" placeholder="Enter Adventure" maxlength="250"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Specialty</label><textarea class="form-control input-sm" name="Hotel.specialty" placeholder="Enter Specialty" maxlength="250"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Means To Transport </label><select id="drpmeansToTransport" class="form-control input-sm" name="Hotel.meansToTransport" ><option value="">-Select -meansToTransport-</option></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Tour Reporting Point</label><input type="text" id="txttourReportingPoint" class="form-control input-sm" name="Hotel.tourReportingPoint" placeholder="Enter Tour Reporting Point">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Tour Dropping </label><input type="text" id="txttourDropping" class="form-control input-sm" name="Hotel.tourDropping" placeholder="Enter Tour Dropping ">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Point</label><input type="text" id="txtpoint" class="form-control input-sm" name="Hotel.point" placeholder="Enter Point">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Tour Start Date</label><input type="text" id="dtptourStartDate" class="form-control datepicker" name="Hotel.tourStartDate">
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Tour End Date</label><input type="text" id="dtptourEndDate" class="form-control datepicker" name="Hotel.tourEndDate">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Day – Destination</label><input type="text" id="txtday–Destination" class="form-control input-sm" name="Hotel.day–Destination" placeholder="Enter Day – Destination">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Description</label><textarea class="form-control input-sm" name="Hotel.description" placeholder="Enter Description" maxlength="250"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Meal</label><input type="checkbox" id="chkmeal" name="Hotel.meal" >
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Inclusions</label><textarea class="form-control input-sm" name="Hotel.inclusions" placeholder="Enter Inclusions" maxlength="250"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Exclusions</label><textarea class="form-control input-sm" name="Hotel.exclusions" placeholder="Enter Exclusions" maxlength="250"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Tour Requirements</label><textarea class="form-control input-sm" name="Hotel.tourRequirements" placeholder="Enter Tour Requirements" maxlength="250"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Room</label><select id="drproom" class="form-control input-sm" name="Hotel.room"><option value="">-Select -room-</option></select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Package Cost</label><input type="text" id="txtpackageCost" class="form-control input-sm" name="Hotel.packageCost" placeholder="Enter Package Cost">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Discount Cost</label><input type="text" id="txtdiscountCost" class="form-control input-sm" name="Hotel.discountCost" placeholder="Enter Discount Cost">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Payment Mode Description</label><textarea class="form-control input-sm" name="Hotel.paymentModeDescription" placeholder="Enter Payment Mode Description" maxlength="250"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Terms & Condition</label><textarea class="form-control input-sm" name="Hotel.terms&Condition" placeholder="Enter Terms & Condition" maxlength="250"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Cancellation Details</label><textarea class="form-control input-sm" name="Hotel.cancellationDetails" placeholder="Enter Cancellation Details" maxlength="250"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Route Changes /Postponement / Delay</label><textarea class="form-control input-sm" name="Hotel.routeChanges/Postponement/Delay" placeholder="Enter Route Changes /Postponement / Delay" maxlength="250"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success active" id="btnsave">Save</button>
+
+                    <button type="reset" class="btn btn-warning active" id="btnreset">Reset</button>
+
+                    <button type="button" class="btn btn-danger active" id="btnback">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+</div>

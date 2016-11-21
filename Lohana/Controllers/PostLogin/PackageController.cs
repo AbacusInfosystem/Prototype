@@ -6,17 +6,12 @@ using System.Web.Mvc;
 
 namespace Lohana.Controllers.PostLogin
 {
-    public class CustomerController : Controller
+    public class PackageController : Controller
     {
         //
-        // GET: /Customer/
+        // GET: /Package/
 
         public ActionResult Index()
-        {
-            return View();
-        }
-
-        public ActionResult Search()
         {
             return View();
         }
