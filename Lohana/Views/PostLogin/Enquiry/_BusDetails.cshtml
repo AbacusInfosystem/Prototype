@@ -3,7 +3,14 @@
 <div class="row">
     <div class="col-md-2">
         <div class="form-group">
-            <label>No of Bus Tickets</label><select id="drpnoOfBusTickets" class="form-control input-sm" name="Hotel.noOfBusTickets"><option value>-Select -noOfBusTickets-</option></select>
+            <label>No of Bus Tickets</label><select id="drpnoOfBusTickets" class="form-control input-sm" name="Hotel.noOfBusTickets">
+                <option>-Select No Of Bus Tickets-</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
         </div>
     </div>
     <div class="col-md-2">
@@ -16,9 +23,14 @@
             <label>Going To</label><input type="text" id="txtgoingTo" class="form-control input-sm" name="Hotel.goingTo" placeholder="Enter Going To">
         </div>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-3">
         <div class="form-group">
-            <label>Bus Type</label><select id="drpbusType" class="form-control input-sm" name="Hotel.busType"><option value>-Select -busType-</option></select>
+            <label>Bus Type</label><select id="drpbusType" class="form-control input-sm" name="Hotel.busType">
+                <option>-Select Bus Type-</option>
+                <option>AC</option>
+                <option>Non AC</option>
+                <option>Public Transport</option>
+            </select>
         </div>
     </div>
     <div class="col-md-2">
@@ -40,54 +52,38 @@
 <div class="row">
 
     <div class="table-responsive">
-        <table class="table table-bordered" id="tblRoomDetails">
+        <table class="table table-bordered" id="tblBusDetails">
             <thead>
                 <tr>
-                    <th width="15%">Location</th>
-                    <th width="15%">Hotel Type</th>
-                    <th width="15%">Room Type</th>
-                    <th width="5%">No Of Guests</th>
-                    <th width="5%">Room Count</th>
-                    <th width="15%">Hotel Name</th>
-                    <th width="10%">Budget</th>
-                    <th width="10%">Check in</th>
-                    <th width="10%">Check out</th>
-                    <th width="5%">Action</th>
+                    <th>No of Ticket</th>
+                    <th>Origin</th>
+                    <th>Destination</th>
+                    <th>Ticket Type</th>
+                    <th>Depart Date</th>
+                    <th>Action</th>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>2</td>
+                    <td>Mumbai</td>
+                    <td>Delhi</td>
+                    <td>AC</td>
+                    <td>20-11-2016</td>
                     <td>Edit/Delete</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>4</td>
+                    <td>Kolkata</td>
+                    <td>Chennai</td>
+                    <td>Non Ac</td>
+                    <td>18-12-2016</td>
                     <td>Edit/Delete</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>6</td>
+                    <td>Delhi</td>
+                    <td>Kolkata</td>
+                    <td>B.E.S.T</td>
+                    <td>1-12-2016</td>
                     <td>Edit/Delete</td>
                 </tr>
 
