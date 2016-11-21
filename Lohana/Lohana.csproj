@@ -189,9 +189,9 @@
     <Compile Include="Controllers\PostLogin\HomeController.cs" />
     <Compile Include="Controllers\PostLogin\HotelController.cs" />
     <Compile Include="Controllers\PostLogin\PackageController.cs" />
+    <Compile Include="Controllers\PostLogin\QuotationController.cs" />
     <Compile Include="Controllers\PostLogin\VendorController.cs" />
     <Compile Include="Controllers\PreLogin\LoginController.cs" />
-    <Compile Include="Controllers\QuotationController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
