@@ -1,23 +1,12 @@
 ﻿
 <div class="row">
-    <div class="col-md-3">
-        <div class="form-group">
-            <label>No of Flight Tickets</label><select id="drpnoOfFlightTickets" class="form-control input-sm" name="Hotel.noOfFlightTickets">
-                <option>-Select No Of Flight Tickets-</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
-    </div>
+ 
     <div class="col-md-2">
         <div class="form-group">
             <label>Flight Name</label><input type="text" id="txtflightName" class="form-control input-sm" name="Hotel.flightName" placeholder="Enter Flight Name">
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-2">
         <div class="form-group">
             <label>Ticket Type</label><select id="drpticketType" class="form-control input-sm" name="Hotel.ticketType">
                 <option>-Select Ticket Type-</option>
@@ -30,39 +19,56 @@
     </div>
     <div class="col-md-2">
         <div class="form-group">
-            <label>Leaving From </label><input type="text" id="txtleavingFrom" class="form-control input-sm" name="Hotel.leavingFrom" placeholder="Enter Leaving From ">
+            <label>Source </label><input type="text" id="txtsource" class="form-control input-sm" name="Hotel.leavingFrom" placeholder="Enter Source ">
         </div>
     </div>
     <div class="col-md-2">
         <div class="form-group">
-            <label>Going To</label><input type="text" id="txtgoingTo" class="form-control input-sm" name="Hotel.goingTo" placeholder="Enter Going To">
+            <label>Destination</label><input type="text" id="txtgoingTo" class="form-control input-sm" name="Hotel.goingTo" placeholder="Enter Destination">
         </div>
     </div>
+
+    <div class="col-md-2">
+        <div class="form-group">
+            <label>Is Round Trip</label><select id="drpticketType" class="form-control input-sm" name="Hotel.ticketType">
+                <option>-Select-</option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+    </div>
+
 </div>
+
 <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-2">
         <div class="form-group">
-            <label>Departure Date with Time.</label><input type="text" id="dtpdepartureDateWithTime" class="form-control datepicker" name="Hotel.departureDateWithTime">
+            <label>Departure Date/Time.</label><input type="text" id="dtpdepartureDateWithTime" class="form-control input-sm datepicker" name="Hotel.departureDateWithTime" placeholder="Departure Date / Time">
         </div>
     </div>
     <div class="col-md-2">
         <div class="form-group">
-            <label>Arrival Date with Time.</label><input type="text" id="dtparrivalDateWithTime" class="form-control datepicker" name="Hotel.arrivalDateWithTime">
+            <label>Arrival Date/Time.</label><input type="text" id="dtparrivalDateWithTime" class="form-control input-sm datepicker" name="Hotel.arrivalDateWithTime" placeholder="Arrival Date / Time">
         </div>
     </div>
-    <div class="col-md-3">
+
+    <div class="col-md-2">
         <div class="form-group">
-            <label>Round Trip</label><input type="radio" id="rdroundTrip" name="Hotel.roundTrip">
+            <label>Adults Count</label><input type="text" id="txtAdultCount" class="form-control input-sm" name="Hotel.adultCount" placeholder="Enter adult count">
         </div>
     </div>
     <div class="col-md-2">
         <div class="form-group">
-            <label>One Way</label><input type="radio" id="rdoneWay" name="Hotel.roundTrip">
+            <label>Children Count</label><input type="text" id="txtChildrenCount" class="form-control input-sm" name="Hotel.ChildrenCount" placeholder="Enter Children count">
+        </div>
+    </div> 
+
+    <div class="col-md-2">
+        <div class="form-group">
+            <label>Budget</label>
+            <input type="text" id="txtbudget" class="form-control input-sm" name="Hotel.budget" placeholder="Enter Budget">
         </div>
     </div>
-
-
-
 
     <div class="col-md-1">
         <div class="form-group">
@@ -79,47 +85,58 @@
         <table class="table table-bordered" id="tblRoomDetails">
             <thead>
                 <tr>
-                    <th>No of Flight Tickets</th>
                     <th>Flight Name</th>
                     <th>Ticket Type</th>
-                    <th>Leaving From</th>
-                    <th>Going To</th>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Round Trip</th>
                     <th>Departure Date Time</th>
                     <th>Arrival Date Time</th>
-                    <th>Round Trip</th>
+                    <th>Adults Count</th>
+                    <th>Children Count</th>
+                    <th>Budget</th>
                     <th>Action</th>
                 </tr>
                 <tr>
-                    <td>2</td>
+                   
                     <td>Air India</td>
                     <td>Business</td>
                     <td>Mumbai</td>
                     <td>Goa</td>
-                    <td>1-11-2016 4pm</td>
-                    <td>1-11-2016 7pm</td>
                     <td>No</td>
+                    <td>1-11-2016 / 4pm</td>
+                    <td>1-11-2016 / 7pm</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>8000</td>
                     <td>Edit/Delete</td>
                 </tr>
                 <tr>
-                    <td>4</td>
+                  
                     <td>Indigo</td>
                     <td>Economy</td>
                     <td>Delhi</td>
                     <td>Chennai</td>
-                    <td>23-11-2016 2pm</td>
-                    <td>23-11-2016 8pm</td>
                     <td>Yes</td>
+                    <td>23-11-2016 / 2pm</td>
+                    <td>23-11-2016 / 8pm</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>11111</td>
                     <td>Edit/Delete</td>
                 </tr>
                 <tr>
-                    <td>1</td>
+                  
                     <td>Ethiad Airways</td>
                     <td>First</td>
                     <td>Mumbai</td>
                     <td>Dubai</td>
-                    <td>30-11-2016 8pm</td>
-                    <td>1-12-2016 5am</td>
                     <td>Yes</td>
+                    <td>30-11-2016 / 8pm</td>
+                    <td>1-12-2016 / 5am</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>13333</td>
                     <td>Edit/Delete</td>
                 </tr>
 

@@ -191,6 +191,7 @@
     <Compile Include="Controllers\PostLogin\PackageController.cs" />
     <Compile Include="Controllers\PostLogin\VendorController.cs" />
     <Compile Include="Controllers\PreLogin\LoginController.cs" />
+    <Compile Include="Controllers\QuotationController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1210,6 +1211,14 @@
     <Content Include="Views\PostLogin\Enquiry\_CarDetails.cshtml" />
     <Content Include="Views\PostLogin\Enquiry\_TrainDetails.cshtml" />
     <Content Include="Views\PostLogin\Enquiry\_DestinationDetailsFacilities.cshtml" />
+    <Content Include="Views\PostLogin\Quotation\Index.cshtml" />
+    <Content Include="Views\PostLogin\Quotation\Search.cshtml" />
+    <Content Include="Views\PostLogin\Quotation\_HotelQuotationDetails.cshtml" />
+    <Content Include="Views\PostLogin\Quotation\_BusQuotationDetails.cshtml" />
+    <Content Include="Views\PostLogin\Quotation\_CarQuotationDetails.cshtml" />
+    <Content Include="Views\PostLogin\Quotation\_FlightQuotationDetails.cshtml" />
+    <Content Include="Views\PostLogin\Quotation\_TrainQuotationDetails.cshtml" />
+    <Content Include="Views\PostLogin\Quotation\_DestinationQuotationDetailsFacilities.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

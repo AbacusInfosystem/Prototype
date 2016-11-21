@@ -1,26 +1,14 @@
 ﻿
 
 <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-3">
         <div class="form-group">
-            <label>No of Bus Tickets</label><select id="drpnoOfBusTickets" class="form-control input-sm" name="Hotel.noOfBusTickets">
-                <option>-Select No Of Bus Tickets-</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
+            <label>Source</label><input type="text" id="txtleavingFrom" class="form-control input-sm" name="Hotel.leavingFrom" placeholder="Enter Source">
         </div>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-3">
         <div class="form-group">
-            <label>Leaving From</label><input type="text" id="txtleavingFrom" class="form-control input-sm" name="Hotel.leavingFrom" placeholder="Enter Leaving From">
-        </div>
-    </div>
-    <div class="col-md-2">
-        <div class="form-group">
-            <label>Going To</label><input type="text" id="txtgoingTo" class="form-control input-sm" name="Hotel.goingTo" placeholder="Enter Going To">
+            <label>Destination</label><input type="text" id="txtgoingTo" class="form-control input-sm" name="Hotel.goingTo" placeholder="Enter Destination">
         </div>
     </div>
     <div class="col-md-3">
@@ -29,13 +17,51 @@
                 <option>-Select Bus Type-</option>
                 <option>AC</option>
                 <option>Non AC</option>
-                <option>Public Transport</option>
+                <option>Volvo</option>
+                <option>Sleeper</option>
             </select>
         </div>
     </div>
+
     <div class="col-md-2">
         <div class="form-group">
-            <label>Depart Date</label><input type="text" id="dtpdepartDate" class="form-control datepicker" name="Hotel.departDate">
+            <label>Departure Date</label><input type="text" id="dtpdepartDate" class="form-control input-sm datepicker" name="Hotel.departDate" placeholder="Enter Departure Date">
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+
+
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Adults Count</label><input type="text" id="txtAdultCount" class="form-control input-sm" name="Hotel.adultCount" placeholder="Enter Adult count">
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Children Count</label><input type="text" id="txtChildrenCount" class="form-control input-sm" name="Hotel.ChildrenCount" placeholder="Enter Children count">
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Ticket Delivery</label>
+            <select id="drppackageType" class="form-control input-sm" name="Hotel.packageType">
+                <option value="">-Select Delivery Type-</option>
+                <option value="">Email</option>
+                <option value="">Office</option>
+                <option value="">Courier</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="col-md-2">
+        <div class="form-group">
+            <label>Budget</label>
+            <input type="text" id="txtbudget" class="form-control input-sm" name="Hotel.budget" placeholder="Enter Budget">
         </div>
     </div>
 
@@ -55,35 +81,46 @@
         <table class="table table-bordered" id="tblBusDetails">
             <thead>
                 <tr>
-                    <th>No of Ticket</th>
-                    <th>Origin</th>
+                    <th>Source</th>
                     <th>Destination</th>
-                    <th>Ticket Type</th>
-                    <th>Depart Date</th>
+                    <th>Bus Type</th>
+                    <th>Departure Date</th>
+                    <th>Adults Count</th>
+                    <th>Children Count</th>
+                    <th>Budget</th>
                     <th>Action</th>
                 </tr>
                 <tr>
-                    <td>2</td>
+                    
                     <td>Mumbai</td>
                     <td>Delhi</td>
                     <td>AC</td>
                     <td>20-11-2016</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>3000</td>
                     <td>Edit/Delete</td>
                 </tr>
                 <tr>
-                    <td>4</td>
+                    
                     <td>Kolkata</td>
                     <td>Chennai</td>
                     <td>Non Ac</td>
                     <td>18-12-2016</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>2555</td>
                     <td>Edit/Delete</td>
                 </tr>
                 <tr>
-                    <td>6</td>
+                   
                     <td>Delhi</td>
                     <td>Kolkata</td>
-                    <td>B.E.S.T</td>
+                    <td>Volvo</td>
                     <td>1-12-2016</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>4000</td>
                     <td>Edit/Delete</td>
                 </tr>
 
