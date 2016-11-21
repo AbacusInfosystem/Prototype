@@ -9,14 +9,14 @@
     <section class="content-header">
 
         <h1>
-            Enquiry
+            Quotation
 
             <small>Create / Update Page</small>
         </h1>
 
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i>Sales</a></li>
-            <li class="active">Enquiry</li>
+            <li class="active">Quotation</li>
         </ol>
     </section>
 
@@ -25,7 +25,7 @@
     <section class="content">
         <div class="box">
             <div class="box-header">
-                <h3 class="box-title">Enquiry</h3>
+                <h3 class="box-title">Quotation</h3>
             </div>
 
 
@@ -50,30 +50,7 @@
                     </div>
                 </div>
 
-                <div class="box-header">
-                    <h3 class="box-title">Enquiry Type</h3>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <input type="radio" name="EnquiryType">
-                            <label> Quick enquiry</label>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <input type="radio" name="EnquiryType">
-                            <label> Custom enquiry</label>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <input type="radio" name="EnquiryType">
-                            <label> Preplanned enquiry</label>
-                        </div>
-                    </div>
-                </div>
+             
 
                 <div class="row">
                     <div class="col-md-12">
@@ -84,7 +61,7 @@
                                 <li class="active"><a href="#tab_1" data-toggle="tab">Package Details</a></li>
                                 <li><a href="#tab_2" data-toggle="tab">Services</a></li>
                                 <li><a href="#tab_3" data-toggle="tab">Day Wise</a></li>
-                                @*<li><a href="#tab_4" data-toggle="tab">Additional Info</a></li>*@
+                                <li><a href="#tab_4" data-toggle="tab">Additional Info</a></li>
 
                             </ul>
 
@@ -92,7 +69,16 @@
 
                                 <div class="tab-pane active" id="tab_1">
                                     <div class="row">
-
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Package Type</label>
+                                                <select id="drppackageType" class="form-control input-sm" name="Hotel.packageType">
+                                                    <option value="">-Select Package Type-</option>
+                                                    <option value="">Individual </option>
+                                                    <option value="">Group </option>
+                                                </select>
+                                            </div>
+                                        </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label>Category</label>
@@ -116,29 +102,21 @@
                                                 </select>
                                             </div>
                                         </div>
+                                    </div>
+
+                                    <div class="row">
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label>Destination</label><input type="text" id="txtdestination" class="form-control input-sm" name="Hotel.destination" placeholder="Enter Destination">
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="row">
-
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <label>Tour Start Date</label><input type="text" id="dtptourStartDate" class="form-control input-sm datepicker" name="Hotel.tourStartDate" placeholder="Enter Tour Start Date">
+                                                <label>Budget</label>
+                                                <input type="text" id="txtbudget" class="form-control input-sm" name="Hotel.budget" placeholder="Enter Budget">
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label>Adults Count</label><input type="text" id="txtAdultCount" class="form-control input-sm" name="Hotel.adultCount" placeholder="Enter Adult count">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label>Children Count</label><input type="text" id="txtChildrenCount" class="form-control input-sm" name="Hotel.ChildrenCount" placeholder="Enter Children count">
-                                            </div>
                                         </div>
                                     </div>
 
@@ -148,21 +126,34 @@
                                                 <label>Duration (days)</label><input type="text" id="txtduration" class="form-control input-sm" name="Hotel.duration" placeholder="Enter Duration (days)">
                                             </div>
                                         </div>
+
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <label>Total Budget</label>
-                                                <input type="text" id="txtbudget" class="form-control input-sm" name="Hotel.budget" placeholder="Enter Budget">
+                                                <label>Tour Start Date</label><input type="text" id="dtptourStartDate" class="form-control input-sm datepicker" name="Hotel.tourStartDate">
                                             </div>
                                         </div>
 
-
                                         <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label>Best Time to Reach You</label><input type="text" id="tpbestTimeToReachYou" class="form-control input-sm timepicker" name="Hotel.bestTimeToReachYou" placeholder="Best Time To Reach You">
-                                            </div>
                                         </div>
                                     </div>
 
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Best Time to Reach You</label><input type="text" id="tpbestTimeToReachYou" class="form-control input-sm timepicker" name="Hotel.bestTimeToReachYou">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Adults Count</label><input type="text" id="txtAdultCount" class="form-control input-sm" name="Hotel.adultCount" placeholder="Enter adult count">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Children Count</label><input type="text" id="txtChildrenCount" class="form-control input-sm" name="Hotel.ChildrenCount" placeholder="Enter Children count">
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </div>
 
@@ -184,7 +175,7 @@
                                                 <div id="collapseOne" class="panel-collapse collapse in">
                                                     <div class="box-body">
 
-                                                        @{Html.RenderPartial("_HotelDetails");}
+                                                        @{Html.RenderPartial("_HotelQuotationDetails");}
 
                                                     </div>
                                                 </div>
@@ -199,7 +190,7 @@
                                                 </div>
                                                 <div id="collapseTwo" class="panel-collapse collapse">
                                                     <div class="box-body">
-                                                        @{Html.RenderPartial("_TrainDetails");}
+                                                        @{Html.RenderPartial("_TrainQuotationDetails");}
                                                     </div>
                                                 </div>
                                             </div>
@@ -213,7 +204,7 @@
                                                 </div>
                                                 <div id="collapseThree" class="panel-collapse collapse">
                                                     <div class="box-body">
-                                                        @{Html.RenderPartial("_FlightDetails");}
+                                                        @{Html.RenderPartial("_FlightQuotationDetails");}
                                                     </div>
                                                 </div>
                                             </div>
@@ -227,7 +218,7 @@
                                                 </div>
                                                 <div id="collapseFour" class="panel-collapse collapse">
                                                     <div class="box-body">
-                                                        @{Html.RenderPartial("_BusDetails");}
+                                                        @{Html.RenderPartial("_BusQuotationDetails");}
                                                     </div>
                                                 </div>
                                             </div>
@@ -243,18 +234,12 @@
                                                     <div class="box-body">
 
                                                         <div class="row">
+
                                                             <div class="col-md-3">
                                                                 <div class="form-group">
                                                                     <label>Vehicle Type</label>
-                                                                    <select id="drppackageType" class="form-control input-sm" name="Hotel.packageType">
-                                                                        <option value="">-Select Vehicle Type-</option>
-                                                                        <option value="">SUV</option>
-                                                                        <option value="">Sedan </option>
-                                                                        <option value="">Tempo Traveller</option>
-                                                                        <option value="">Bus</option>
-                                                                    </select>
+                                                                    <input type="text" id="txtvehicleType" class="form-control input-sm" name="Hotel.vehicleType" placeholder="Enter Vehicle Type">
                                                                 </div>
-
                                                             </div>
 
                                                             <div class="col-md-3">
@@ -264,44 +249,12 @@
                                                                 </div>
                                                             </div>
 
-
-
                                                             <div class="col-md-3">
                                                                 <div class="form-group">
-                                                                    <label>Ticket Delivery</label>
-                                                                    <select id="drppackageType" class="form-control input-sm" name="Hotel.packageType">
-                                                                        <option value="">-Select Delivery Type-</option>
-                                                                        <option value="">Email</option>
-                                                                        <option value="">Office</option>
-                                                                        <option value="">Courier</option>
-                                                                    </select>
-                                                                </div>
-
-                                                            </div>
-
-                                                        </div>
-
-                                                        <div class="row">
-
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label>Adults Count</label><input type="text" id="txtAdultCount" class="form-control input-sm" name="Hotel.adultCount" placeholder="Enter adult count">
+                                                                    <label>Vehicle Price</label>
+                                                                    <input type="text" id="txtvehiclePrice" class="form-control input-sm" name="Hotel.vehiclePrice" placeholder="Enter Vehicle Price">
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label>Children Count</label><input type="text" id="txtChildrenCount" class="form-control input-sm" name="Hotel.ChildrenCount" placeholder="Enter Children count">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <label>Budget</label>
-                                                                    <input type="text" id="txtvehiclePrice" class="form-control input-sm" name="Hotel.vehiclePrice" placeholder="Enter Budget">
-                                                                </div>
-                                                            </div>
-
-
                                                             <div class="col-md-1">
                                                                 <div class="form-group">
                                                                     <br>
@@ -319,32 +272,24 @@
                                                                         <tr>
                                                                             <th>Vehicle Type</th>
                                                                             <th>Vehicle Name</th>
-                                                                            <th>Adults Count</th>
-                                                                            <th>Children Count</th>
-                                                                            <th>Budget</th>
+                                                                            <th>Vehicle Price</th>
                                                                             <th>Action</th>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td>SUV</td>
+                                                                            <td>Car</td>
                                                                             <td>Honda City</td>
-                                                                            <td>2</td>
-                                                                            <td>3</td>
                                                                             <td>9000</td>
-                                                                            <td>Edit/Delete</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Sedan</td>
-                                                                            <td>BMW X5</td>
-                                                                            <td>1</td>
-                                                                            <td>5</td>
-                                                                            <td>20000</td>
                                                                             <td>Edit/Delete</td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>Bus</td>
                                                                             <td>Volvo</td>
-                                                                            <td>2</td>
-                                                                            <td>5</td>
+                                                                            <td>20000</td>
+                                                                            <td>Edit/Delete</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>van</td>
+                                                                            <td>abcd</td>
                                                                             <td>10500</td>
                                                                             <td>Edit/Delete</td>
                                                                         </tr>
@@ -353,7 +298,6 @@
                                                                 </table>
                                                             </div>
                                                         </div>
-
                                                     </div>
                                                 </div>
                                             </div>
@@ -412,7 +356,7 @@
                                                 <div id="DaycollapseOne" class="panel-collapse collapse in">
                                                     <div class="box-body">
 
-                                                        @{Html.RenderPartial("_DestinationDetailsFacilities");}
+                                                        @{Html.RenderPartial("_DestinationQuotationDetailsFacilities");}
 
                                                         <div class="row">
                                                             <div class="box-body">
@@ -428,7 +372,7 @@
                                                                         <div id="DaycollapseTwo" class="panel-collapse collapse in">
                                                                             <div class="box-body">
 
-                                                                                @{Html.RenderPartial("_HotelDetails");}
+                                                                                @{Html.RenderPartial("_HotelQuotationDetails");}
 
                                                                             </div>
                                                                         </div>
@@ -443,7 +387,7 @@
                                                                         </div>
                                                                         <div id="DaycollapseThree" class="panel-collapse collapse">
                                                                             <div class="box-body">
-                                                                                @{Html.RenderPartial("_TrainDetails");}
+                                                                                @{Html.RenderPartial("_TrainQuotationDetails");}
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -457,7 +401,7 @@
                                                                         </div>
                                                                         <div id="DaycollapseFour" class="panel-collapse collapse">
                                                                             <div class="box-body">
-                                                                                @{Html.RenderPartial("_FlightDetails");}
+                                                                                @{Html.RenderPartial("_FlightQuotationDetails");}
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -471,7 +415,7 @@
                                                                         </div>
                                                                         <div id="DaycollapseFive" class="panel-collapse collapse">
                                                                             <div class="box-body">
-                                                                                @{Html.RenderPartial("_BusDetails");}
+                                                                                @{Html.RenderPartial("_BusQuotationDetails");}
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -487,18 +431,12 @@
                                                                             <div class="box-body">
 
                                                                                 <div class="row">
+
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group">
                                                                                             <label>Vehicle Type</label>
-                                                                                            <select id="drppackageType" class="form-control input-sm" name="Hotel.packageType">
-                                                                                                <option value="">-Select Vehicle Type-</option>
-                                                                                                <option value="">SUV</option>
-                                                                                                <option value="">Sedan </option>
-                                                                                                <option value="">Tempo Traveller</option>
-                                                                                                <option value="">Bus</option>
-                                                                                            </select>
+                                                                                            <input type="text" id="txtvehicleType" class="form-control input-sm" name="Hotel.vehicleType" placeholder="Enter Vehicle Type">
                                                                                         </div>
-
                                                                                     </div>
 
                                                                                     <div class="col-md-3">
@@ -508,44 +446,12 @@
                                                                                         </div>
                                                                                     </div>
 
-
-
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group">
-                                                                                            <label>Ticket Delivery</label>
-                                                                                            <select id="drppackageType" class="form-control input-sm" name="Hotel.packageType">
-                                                                                                <option value="">-Select Delivery Type-</option>
-                                                                                                <option value="">Email</option>
-                                                                                                <option value="">Office</option>
-                                                                                                <option value="">Courier</option>
-                                                                                            </select>
-                                                                                        </div>
-
-                                                                                    </div>
-
-                                                                                </div>
-
-                                                                                <div class="row">
-
-                                                                                    <div class="col-md-3">
-                                                                                        <div class="form-group">
-                                                                                            <label>Adults Count</label><input type="text" id="txtAdultCount" class="form-control input-sm" name="Hotel.adultCount" placeholder="Enter adult count">
+                                                                                            <label>Vehicle Price</label>
+                                                                                            <input type="text" id="txtvehiclePrice" class="form-control input-sm" name="Hotel.vehiclePrice" placeholder="Enter Vehicle Price">
                                                                                         </div>
                                                                                     </div>
-                                                                                    <div class="col-md-3">
-                                                                                        <div class="form-group">
-                                                                                            <label>Children Count</label><input type="text" id="txtChildrenCount" class="form-control input-sm" name="Hotel.ChildrenCount" placeholder="Enter Children count">
-                                                                                        </div>
-                                                                                    </div>
-
-                                                                                    <div class="col-md-3">
-                                                                                        <div class="form-group">
-                                                                                            <label>Budget</label>
-                                                                                            <input type="text" id="txtvehiclePrice" class="form-control input-sm" name="Hotel.vehiclePrice" placeholder="Enter Budget">
-                                                                                        </div>
-                                                                                    </div>
-
-
                                                                                     <div class="col-md-1">
                                                                                         <div class="form-group">
                                                                                             <br>
@@ -563,32 +469,24 @@
                                                                                                 <tr>
                                                                                                     <th>Vehicle Type</th>
                                                                                                     <th>Vehicle Name</th>
-                                                                                                    <th>Adults Count</th>
-                                                                                                    <th>Children Count</th>
-                                                                                                    <th>Budget</th>
+                                                                                                    <th>Vehicle Price</th>
                                                                                                     <th>Action</th>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td>SUV</td>
+                                                                                                    <td>Car</td>
                                                                                                     <td>Honda City</td>
-                                                                                                    <td>2</td>
-                                                                                                    <td>3</td>
                                                                                                     <td>9000</td>
-                                                                                                    <td>Edit/Delete</td>
-                                                                                                </tr>
-                                                                                                <tr>
-                                                                                                    <td>Sedan</td>
-                                                                                                    <td>BMW X5</td>
-                                                                                                    <td>1</td>
-                                                                                                    <td>5</td>
-                                                                                                    <td>20000</td>
                                                                                                     <td>Edit/Delete</td>
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td>Bus</td>
                                                                                                     <td>Volvo</td>
-                                                                                                    <td>2</td>
-                                                                                                    <td>5</td>
+                                                                                                    <td>20000</td>
+                                                                                                    <td>Edit/Delete</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>van</td>
+                                                                                                    <td>abcd</td>
                                                                                                     <td>10500</td>
                                                                                                     <td>Edit/Delete</td>
                                                                                                 </tr>
@@ -597,7 +495,6 @@
                                                                                         </table>
                                                                                     </div>
                                                                                 </div>
-
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -627,7 +524,7 @@
                                                 <div id="Day2collapseOne" class="panel-collapse collapse in">
                                                     <div class="box-body">
 
-                                                        @{Html.RenderPartial("_DestinationDetailsFacilities");}
+                                                        @{Html.RenderPartial("_DestinationQuotationDetailsFacilities");}
 
                                                         <div class="row">
                                                             <div class="box-body">
@@ -643,7 +540,7 @@
                                                                         <div id="Day2collapseTwo" class="panel-collapse collapse in">
                                                                             <div class="box-body">
 
-                                                                                @{Html.RenderPartial("_HotelDetails");}
+                                                                                @{Html.RenderPartial("_HotelQuotationDetails");}
 
                                                                             </div>
                                                                         </div>
@@ -658,7 +555,7 @@
                                                                         </div>
                                                                         <div id="Day2collapseThree" class="panel-collapse collapse">
                                                                             <div class="box-body">
-                                                                                @{Html.RenderPartial("_TrainDetails");}
+                                                                                @{Html.RenderPartial("_TrainQuotationDetails");}
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -672,7 +569,7 @@
                                                                         </div>
                                                                         <div id="Day2collapseFour" class="panel-collapse collapse">
                                                                             <div class="box-body">
-                                                                                @{Html.RenderPartial("_FlightDetails");}
+                                                                                @{Html.RenderPartial("_FlightQuotationDetails");}
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -686,7 +583,7 @@
                                                                         </div>
                                                                         <div id="Day2collapseFive" class="panel-collapse collapse">
                                                                             <div class="box-body">
-                                                                                @{Html.RenderPartial("_BusDetails");}
+                                                                                @{Html.RenderPartial("_BusQuotationDetails");}
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -702,18 +599,12 @@
                                                                             <div class="box-body">
 
                                                                                 <div class="row">
+
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group">
                                                                                             <label>Vehicle Type</label>
-                                                                                            <select id="drppackageType" class="form-control input-sm" name="Hotel.packageType">
-                                                                                                <option value="">-Select Vehicle Type-</option>
-                                                                                                <option value="">SUV</option>
-                                                                                                <option value="">Sedan </option>
-                                                                                                <option value="">Tempo Traveller</option>
-                                                                                                <option value="">Bus</option>
-                                                                                            </select>
+                                                                                            <input type="text" id="txtvehicleType" class="form-control input-sm" name="Hotel.vehicleType" placeholder="Enter Vehicle Type">
                                                                                         </div>
-
                                                                                     </div>
 
                                                                                     <div class="col-md-3">
@@ -723,44 +614,12 @@
                                                                                         </div>
                                                                                     </div>
 
-
-
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group">
-                                                                                            <label>Ticket Delivery</label>
-                                                                                            <select id="drppackageType" class="form-control input-sm" name="Hotel.packageType">
-                                                                                                <option value="">-Select Delivery Type-</option>
-                                                                                                <option value="">Email</option>
-                                                                                                <option value="">Office</option>
-                                                                                                <option value="">Courier</option>
-                                                                                            </select>
-                                                                                        </div>
-
-                                                                                    </div>
-
-                                                                                </div>
-
-                                                                                <div class="row">
-
-                                                                                    <div class="col-md-3">
-                                                                                        <div class="form-group">
-                                                                                            <label>Adults Count</label><input type="text" id="txtAdultCount" class="form-control input-sm" name="Hotel.adultCount" placeholder="Enter adult count">
+                                                                                            <label>Vehicle Price</label>
+                                                                                            <input type="text" id="txtvehiclePrice" class="form-control input-sm" name="Hotel.vehiclePrice" placeholder="Enter Vehicle Price">
                                                                                         </div>
                                                                                     </div>
-                                                                                    <div class="col-md-3">
-                                                                                        <div class="form-group">
-                                                                                            <label>Children Count</label><input type="text" id="txtChildrenCount" class="form-control input-sm" name="Hotel.ChildrenCount" placeholder="Enter Children count">
-                                                                                        </div>
-                                                                                    </div>
-
-                                                                                    <div class="col-md-3">
-                                                                                        <div class="form-group">
-                                                                                            <label>Budget</label>
-                                                                                            <input type="text" id="txtvehiclePrice" class="form-control input-sm" name="Hotel.vehiclePrice" placeholder="Enter Budget">
-                                                                                        </div>
-                                                                                    </div>
-
-
                                                                                     <div class="col-md-1">
                                                                                         <div class="form-group">
                                                                                             <br>
@@ -778,32 +637,24 @@
                                                                                                 <tr>
                                                                                                     <th>Vehicle Type</th>
                                                                                                     <th>Vehicle Name</th>
-                                                                                                    <th>Adults Count</th>
-                                                                                                    <th>Children Count</th>
-                                                                                                    <th>Budget</th>
+                                                                                                    <th>Vehicle Price</th>
                                                                                                     <th>Action</th>
                                                                                                 </tr>
                                                                                                 <tr>
-                                                                                                    <td>SUV</td>
+                                                                                                    <td>Car</td>
                                                                                                     <td>Honda City</td>
-                                                                                                    <td>2</td>
-                                                                                                    <td>3</td>
                                                                                                     <td>9000</td>
-                                                                                                    <td>Edit/Delete</td>
-                                                                                                </tr>
-                                                                                                <tr>
-                                                                                                    <td>Sedan</td>
-                                                                                                    <td>BMW X5</td>
-                                                                                                    <td>1</td>
-                                                                                                    <td>5</td>
-                                                                                                    <td>20000</td>
                                                                                                     <td>Edit/Delete</td>
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td>Bus</td>
                                                                                                     <td>Volvo</td>
-                                                                                                    <td>2</td>
-                                                                                                    <td>5</td>
+                                                                                                    <td>20000</td>
+                                                                                                    <td>Edit/Delete</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td>van</td>
+                                                                                                    <td>abcd</td>
                                                                                                     <td>10500</td>
                                                                                                     <td>Edit/Delete</td>
                                                                                                 </tr>
@@ -812,7 +663,6 @@
                                                                                         </table>
                                                                                     </div>
                                                                                 </div>
-
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -829,8 +679,7 @@
 
                                 </div>
 
-                                @*<div class="tab-pane" id="tab_4">
-
+                                <div class="tab-pane" id="tab_4">
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="form-group">
@@ -844,7 +693,6 @@
                                                     <option>Started</option>
                                                     <option>In Progress</option>
                                                     <option>Completed</option>
-                                                    <option>Closed</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -854,7 +702,6 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="form-group">
@@ -879,8 +726,7 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                </div>*@
+                                </div>
 
                                 <!-- /.tab-pane-end -->
 
@@ -889,27 +735,7 @@
                         </div>
                         @*nav-tabs-custom End*@
 
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Additional Information</label><textarea class="form-control input-sm" name="Hotel.additionalInfo" placeholder="Enter Additional Information" maxlength="250"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Status of Enquiry</label><select id="drpstatusOfEnquiry" class="form-control input-sm" name="Hotel.statusOfEnquiry">
-                                        <option>-Select Status Of Enquiry-</option>
-                                        <option>Started</option>
-                                        <option>In Progress</option>
-                                        <option>Completed</option>
-                                        <option>Closed</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-
                 </div>
 
                 <div class="btn-group">

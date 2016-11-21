@@ -4,7 +4,7 @@
     <div class="col-md-2">
         <label>Location</label>
         <div class="form-group">
-            <input type="text" id="txtLocation" class="form-control input-sm" name="Hotel.destination" placeholder="Enter Location">
+            <input type="text" id="txtLocation" class="form-control input-sm" name="Hotel.location" placeholder="Enter Location">
         </div>
 
     </div>
@@ -12,7 +12,7 @@
     <div class="col-md-2">
         <div class="form-group">
             <label>Hotel Type</label>
-            <select id="drppackageType" class="form-control input-sm" name="Hotel.packageType">
+            <select id="drphotelType" class="form-control input-sm" name="Hotel.hotelType">
                 <option value="">-Select Hotel Type-</option>
                 <option value="">5 Start </option>
                 <option value="">4 Star </option>
@@ -24,7 +24,7 @@
     <div class="col-md-2">
         <div class="form-group">
             <label>Room Type</label>
-            <select id="drppackageType" class="form-control input-sm" name="Hotel.packageType">
+            <select id="drproomType" class="form-control input-sm" name="Hotel.roomType">
                 <option value="">-Select Room Type-</option>
                 <option value="">Double Bed Ac </option>
                 <option value="">Double Bed Non Ac </option>
@@ -38,36 +38,51 @@
 
     <div class="col-md-2">
         <div class="form-group">
-            <label>Guest count</label>
-            <input type="text" id="txtLocation" class="form-control input-sm" name="Hotel.destination" placeholder="Enter Guest count">
-        </div>
-    </div>
-
-    <div class="col-md-2">
-        <div class="form-group">
             <label>Room count</label>
-            <input type="text" id="txtLocation" class="form-control input-sm" name="Hotel.destination" placeholder="Enter Room count">
+            <input type="text" id="txtroomCount" class="form-control input-sm" name="Hotel.roomCount" placeholder="Enter Room count">
         </div>
 
     </div>
     <div class="col-md-2">
         <div class="form-group">
             <label>Hotel Name</label>
-            <input type="text" id="txtLocation" class="form-control input-sm" name="Hotel.destination" placeholder="Enter Hotel Name">
+            <input type="text" id="txtName" class="form-control input-sm" name="Hotel.Name" placeholder="Enter Hotel Name">
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-2">
+        <div class="form-group">
+            <label>Adults Count</label><input type="text" id="txtAdultCount" class="form-control input-sm" name="Hotel.adultCount" placeholder="Enter adult count">
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="form-group">
+            <label>Children Count</label><input type="text" id="txtChildrenCount" class="form-control input-sm" name="Hotel.ChildrenCount" placeholder="Enter Children count">
         </div>
     </div>
 
     <div class="col-md-2">
         <div class="form-group">
-            <label>Check In</label>
-            <input type="text" id="txtLocation" class="form-control input-sm" name="Hotel.destination" placeholder="Enter Check In">
+            <label>Check In Date</label>
+            <input type="text" id="txtcheckInDate" class="form-control input-sm" name="Hotel.checkInDate" placeholder="Enter Check In">
         </div>
     </div>
 
     <div class="col-md-2">
         <div class="form-group">
-            <label>Check Out</label>
-            <input type="text" id="txtLocation" class="form-control input-sm" name="Hotel.destination" placeholder="Enter Check Out">
+            <label>Check Out Date</label>
+            <input type="text" id="txtchkOutDate" class="form-control input-sm" name="Hotel.chkOutDate" placeholder="Enter Check Out">
+        </div>
+    </div>
+
+    <div class="col-md-2">
+        <div class="form-group">
+            <label>Budget</label>
+            <input type="text" id="txtbudget" class="form-control input-sm" name="Hotel.budget" placeholder="Enter Budget">
         </div>
     </div>
 
@@ -86,51 +101,55 @@
         <table class="table table-bordered" id="tblRoomDetails">
             <thead>
                 <tr>
-                    <th width="15%">Location</th>
-                    <th width="15%">Hotel Type</th>
-                    <th width="15%">Room Type</th>
-                    <th width="5%">No Of Guests</th>
-                    <th width="5%">Room Count</th>
-                    <th width="15%">Hotel Name</th>
-                    <th width="10%">Budget</th>
-                    <th width="10%">Check in</th>
-                    <th width="10%">Check out</th>
-                    <th width="5%">Action</th>
+                    <th>Location</th>
+                    <th>Hotel Type</th>
+                    <th>Room Type</th>
+                    <th>Room Count</th>
+                    <th>Hotel Name</th>
+                    <th>Adults Count</th>
+                    <th>Children Count</th>                  
+                    <th>CheckIn Date</th>
+                    <th>CheckOut Date</th>
+                    <th>Budget</th>
+                    <th>Action</th>
                 </tr>
                 <tr>
                     <td>Mumbai</td>
                     <td>5 Star</td>
-                    <td>Double Bed Ac</td>
-                    <td>6</td>
-                    <td>3</td>
+                    <td>Double Bed Ac</td>                
+                    <td>2</td>
                     <td>JW Mariott</td>
+                    <td>2</td>
+                    <td>3</td>                 
+                    <td>6-12-2016</td>
+                    <td>12-12-2016</td>
                     <td>65000</td>
-                    <td>10am</td>
-                    <td>10am</td>
                     <td>Edit/Delete</td>
                 </tr>
                 <tr>
                     <td>Goa</td>
                     <td>4 Star</td>
                     <td>Single Bed Ac</td>
-                    <td>8</td>
                     <td>2</td>
                     <td>Hyatt</td>
+                    <td>4</td>
+                    <td>2</td>   
+                    <td>1-11-2016</td>
+                    <td>3-11-2016</td>
                     <td>40000</td>
-                    <td>7am</td>
-                    <td>11pm</td>
                     <td>Edit/Delete</td>
                 </tr>
                 <tr>
                     <td>Banglore</td>
                     <td>4 Star</td>
                     <td>Dormentary</td>
-                    <td>10</td>
-                    <td>1</td>
+                    <td>3</td>
                     <td>Sofitel</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>20-11-2016</td>
+                    <td>24-11-2016</td>
                     <td>20000</td>
-                    <td>6pm</td>
-                    <td>6pm</td>                  
                     <td>Edit/Delete</td>
                 </tr>
 

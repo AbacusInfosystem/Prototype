@@ -81,11 +81,6 @@
 
                                         <h4 style="margin-top: 15px;">Address Details.</h4>
 
-                                        <label>Address</label>
-                                        <div class="form-group">
-                                            <textarea class="form-control input-sm" name="Hotel.address" placeholder="Enter Address" maxlength="250"> </textarea>
-                                        </div>
-
                                         <label>City</label>
                                         <div class="form-group">
                                             <input type="text" id="txtcity" class="form-control input-sm" name="Hotel.city" placeholder="Enter City">
@@ -104,6 +99,11 @@
                                         <label>Pincode</label>
                                         <div class="form-group">
                                             <input type="text" id="txtpinCode" class="form-control input-sm" name="Hotel.pinCode" placeholder="Enter Pin code">
+                                        </div>
+
+                                        <label>Address</label>
+                                        <div class="form-group">
+                                            <textarea class="form-control input-sm" name="Hotel.address" placeholder="Enter Address" maxlength="250"> </textarea>
                                         </div>
 
                                     </div>
@@ -205,7 +205,8 @@
                                 <div class="box-body">
                                     <div class="box-group">
                                         <div class="row">
-                                            <div class="col-md-4">
+
+                                            <div class="col-md-6">
                                                 <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
                                                 <div class="panel box box-primary">
                                                     <div class="box-header with-border">
@@ -260,7 +261,8 @@
                                                 </div>
 
                                             </div>
-                                            <div class="col-md-4">
+
+                                            <div class="col-md-6">
                                                 <div class="panel box box-primary">
                                                     <div class="box-header with-border">
                                                         <h4 class="box-title">
@@ -314,7 +316,13 @@
                                                 </div>
 
                                             </div>
-                                            <div class="col-md-4">
+                                           
+
+                                        </div>
+
+                                        <div class="row">
+
+                                            <div class="col-md-6">
 
                                                 <div class="panel box box-primary">
                                                     <div class="box-header with-border">
@@ -364,11 +372,8 @@
 
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div class="row">
-
-                                            <div class="col-md-4">
+                                            <div class="col-md-6">
                                                 <div class="panel box box-primary">
                                                     <div class="box-header with-border">
                                                         <h4 class="box-title">
@@ -424,7 +429,13 @@
 
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+
+                                        </div>
+
+                                        <div class="row">
+
+                                          
+                                            <div class="col-md-6">
                                                 <div class="panel box box-primary">
                                                     <div class="box-header with-border">
                                                         <h4 class="box-title">
@@ -469,7 +480,8 @@
 
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+
+                                            <div class="col-md-6">
                                                 <div class="panel box box-primary">
                                                     <div class="box-header with-border">
                                                         <h4 class="box-title">
@@ -559,6 +571,7 @@
 
                                                 </div>
                                             </div>
+
                                         </div>
 
                                     </div>
@@ -810,8 +823,15 @@
                                                         <div class="col-md-3">
                                                             <div class="form-group">
                                                                 <label>Vehicle Type</label>
-                                                                <input type="text" id="txtvehicleType" class="form-control input-sm" name="Hotel.vehicleType" placeholder="Enter Vehicle Type">
+                                                                <select id="drppackageType" class="form-control input-sm" name="Hotel.packageType">
+                                                                    <option value="">-Select Vehicle Type-</option>
+                                                                    <option value="">SUV</option>
+                                                                    <option value="">Sedan </option>
+                                                                    <option value="">Tempo Traveller</option>
+                                                                    <option value="">Bus</option>
+                                                                </select>
                                                             </div>
+
                                                         </div>
 
                                                         <div class="col-md-3">
@@ -848,19 +868,19 @@
                                                                         <th>Action</th>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td>Car</td>
+                                                                        <td>SUV</td>
                                                                         <td>Honda City</td>
                                                                         <td>9000</td>
                                                                         <td>Edit/Delete</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td>Bus</td>
+                                                                        <td>Sedan</td>
                                                                         <td>Volvo</td>
                                                                         <td>20000</td>
                                                                         <td>Edit/Delete</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td>van</td>
+                                                                        <td>Bus</td>
                                                                         <td>abcd</td>
                                                                         <td>10500</td>
                                                                         <td>Edit/Delete</td>
