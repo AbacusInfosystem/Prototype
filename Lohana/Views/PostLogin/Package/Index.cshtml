@@ -29,189 +29,469 @@
             </div>
             <div class="box-body">
 
-                <div class="row">
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Package Code</label><input type="text" id="txtpackageCode" class="form-control input-sm" name="Hotel.packageCode" placeholder="Enter Package Code">
+                <div class="col-md-12">
+                    <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+                    <div class="panel box box-primary">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    Basic Details
+                                </a>
+                            </h4>
                         </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Category</label><select id="drpcategory" class="form-control input-sm" name="Hotel.category" ><option value="">-Select -category-</option></select>
-                        </div>
-                    </div>
 
 
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Sub Category</label><select id="drpsubCategory" class="form-control input-sm" name="Hotel.subCategory" ><option value>-Select -subCategory-</option></select>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Package Name</label><input type="text" id="txtpackageName" class="form-control input-sm" name="Hotel.packageName" placeholder="Enter Package Name">
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Package Duration</label><input type="text" id="txtpackageDuration" class="form-control input-sm" name="Hotel.packageDuration" placeholder="Enter Package Duration">
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Place To Visit </label><input type="text" id="txtplaceToVisit" class="form-control input-sm" name="Hotel.placeToVisit" placeholder="Enter Place To Visit ">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Adventure</label><textarea class="form-control input-sm" name="Hotel.adventure" placeholder="Enter Adventure" maxlength="250"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Specialty</label><textarea class="form-control input-sm" name="Hotel.specialty" placeholder="Enter Specialty" maxlength="250"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Means To Transport </label><select id="drpmeansToTransport" class="form-control input-sm" name="Hotel.meansToTransport" ><option value="">-Select -meansToTransport-</option></select>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Tour Reporting Point</label><input type="text" id="txttourReportingPoint" class="form-control input-sm" name="Hotel.tourReportingPoint" placeholder="Enter Tour Reporting Point">
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Tour Dropping </label><input type="text" id="txttourDropping" class="form-control input-sm" name="Hotel.tourDropping" placeholder="Enter Tour Dropping ">
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Point</label><input type="text" id="txtpoint" class="form-control input-sm" name="Hotel.point" placeholder="Enter Point">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Tour Start Date</label><input type="text" id="dtptourStartDate" class="form-control datepicker" name="Hotel.tourStartDate">
-                        </div>
-                    </div>
+                        <div class="box-body">
 
 
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Tour End Date</label><input type="text" id="dtptourEndDate" class="form-control datepicker" name="Hotel.tourEndDate">
-                        </div>
-                    </div>
+                            <div class="row">
 
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Day – Destination</label><input type="text" id="txtday–Destination" class="form-control input-sm" name="Hotel.day–Destination" placeholder="Enter Day – Destination">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Description</label><textarea class="form-control input-sm" name="Hotel.description" placeholder="Enter Description" maxlength="250"></textarea>
-                        </div>
-                    </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Package Code</label><input type="text" id="txtpackageCode" class="form-control input-sm" name="Hotel.packageCode" placeholder="Enter Package Code">
+                                    </div>
+                                </div>
 
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Meal</label><input type="checkbox" id="chkmeal" name="Hotel.meal" >
-                        </div>
-                    </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Category</label><select id="drpcategory" class="form-control input-sm" name="Hotel.category">
+                                            <option>Select Category</option>
+                                            <option>Domestic</option>
+                                            <option>International</option>
+                                        </select>
+                                    </div>
+                                </div>
 
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Inclusions</label><textarea class="form-control input-sm" name="Hotel.inclusions" placeholder="Enter Inclusions" maxlength="250"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Exclusions</label><textarea class="form-control input-sm" name="Hotel.exclusions" placeholder="Enter Exclusions" maxlength="250"></textarea>
-                        </div>
-                    </div>
 
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Tour Requirements</label><textarea class="form-control input-sm" name="Hotel.tourRequirements" placeholder="Enter Tour Requirements" maxlength="250"></textarea>
-                        </div>
-                    </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Sub Category</label><select id="drpsubCategory" class="form-control input-sm" name="Hotel.subCategory">
+                                            <option>Select Sub Category</option>
+                                            <option>Elders</option>
+                                            <option>Family</option>
+                                            <option>Couples</option>
+                                            <option>Honeymoon</option>
+                                            <option>Adventure</option>
+                                        </select>
+                                    </div>
+                                </div>
 
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Room</label><select id="drproom" class="form-control input-sm" name="Hotel.room"><option value="">-Select -room-</option></select>
+                            </div>
+
+
+
                         </div>
+
                     </div>
 
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Package Cost</label><input type="text" id="txtpackageCost" class="form-control input-sm" name="Hotel.packageCost" placeholder="Enter Package Cost">
+
+                <div class="col-md-12">
+                    <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+                    <div class="panel box box-primary">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    Package Details
+                                </a>
+                            </h4>
                         </div>
+
+
+                        <div class="box-body">
+
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Package Name</label><input type="text" id="txtpackageName" class="form-control input-sm" name="Hotel.packageName" placeholder="Enter Package Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Package Duration</label><input type="text" id="txtpackageDuration" class="form-control input-sm" name="Hotel.packageDuration" placeholder="Enter Package Duration">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Place To Visit </label><input type="text" id="txtplaceToVisit" class="form-control input-sm" name="Hotel.placeToVisit" placeholder="Enter Place To Visit ">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Adventure</label><textarea class="form-control input-sm" name="Hotel.adventure" placeholder="Enter Adventure" maxlength="250"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Specialty</label><textarea class="form-control input-sm" name="Hotel.specialty" placeholder="Enter Specialty" maxlength="250"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Means To Transport </label><select id="drpmeansToTransport" class="form-control input-sm" name="Hotel.meansToTransport">
+                                            <option>Select Means To Transport</option>
+                                            <option>Flight</option>
+                                            <option>Cruise</option>
+                                            <option>Bus</option>
+                                            <option>Rail</option>
+                                            <option>Car</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Tour Reporting Point</label><input type="text" id="txttourReportingPoint" class="form-control input-sm" name="Hotel.tourReportingPoint" placeholder="Enter Tour Reporting Point">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Tour Dropping </label><input type="text" id="txttourDropping" class="form-control input-sm" name="Hotel.tourDropping" placeholder="Enter Tour Dropping ">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Point</label><input type="text" id="txtpoint" class="form-control input-sm" name="Hotel.point" placeholder="Enter Point">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Tour Start Date</label><input type="text" id="dtptourStartDate" class="form-control input-sm datepicker" name="Hotel.tourStartDate" placeholder="Enter Tour Start Date">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Tour End Date</label><input type="text" id="dtptourEndDate" class="form-control input-sm datepicker" name="Hotel.tourEndDate" placeholder="Enter Tour End Date">
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
                     </div>
 
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Discount Cost</label><input type="text" id="txtdiscountCost" class="form-control input-sm" name="Hotel.discountCost" placeholder="Enter Discount Cost">
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Payment Mode Description</label><textarea class="form-control input-sm" name="Hotel.paymentModeDescription" placeholder="Enter Payment Mode Description" maxlength="250"></textarea>
-                        </div>
-                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Terms & Condition</label><textarea class="form-control input-sm" name="Hotel.terms&Condition" placeholder="Enter Terms & Condition" maxlength="250"></textarea>
+
+
+                <div class="col-md-12">
+                    <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+                    <div class="panel box box-primary">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    Package Cost [Per Person]
+                                </a>
+                            </h4>
                         </div>
+
+
+                        <div class="box-body">
+
+
+                            <div class="row">
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Room</label><select id="drproom" class="form-control input-sm" name="Hotel.room">
+                                            <option>Select Sharing Type</option>
+                                            <option>Double Sharing</option>
+                                            <option>Triple Sharing</option>
+                                            <option>Quadra Sharing</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Package Cost</label><input type="text" id="txtpackageCost" class="form-control input-sm" name="Hotel.packageCost" placeholder="Enter Package Cost">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Discount Cost</label><input type="text" id="txtdiscountCost" class="form-control input-sm" name="Hotel.discountCost" placeholder="Enter Discount Cost">
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
                     </div>
 
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Cancellation Details</label><textarea class="form-control input-sm" name="Hotel.cancellationDetails" placeholder="Enter Cancellation Details" maxlength="250"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Route Changes /Postponement / Delay</label><textarea class="form-control input-sm" name="Hotel.routeChanges/Postponement/Delay" placeholder="Enter Route Changes /Postponement / Delay" maxlength="250"></textarea>
-                        </div>
-                    </div>
                 </div>
-                
+
+
+                <div class="col-md-12">
+                    <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+                    <div class="panel box box-primary">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    Itinerary
+                                </a>
+                            </h4>
+                        </div>
+
+
+                        <div class="box-body">
+
+                            <div class="row">
+
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Day – Destination - Night</label><input type="text" id="txtday–Destination" class="form-control input-sm" name="Hotel.day–Destination" placeholder="Enter Day – Destination - Night">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Description</label><textarea class="form-control input-sm" name="Hotel.description" placeholder="Enter Description" maxlength="250"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Type Of Meal </label><select id="drpmeansToTransport" class="form-control input-sm" name="Hotel.meansToTransport">
+                                            <option>Select Type Of Meal</option>
+                                            <option>Breakast</option>
+                                            <option>Lunch</option>
+                                            <option>Dinner</option>
+                                            <option>Breakfast Lunch and Dinner</option>
+                                            <option>Lunch and Dinner</option>
+                                            <option>Breakfast and Dinner</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-1">
+                                    <div class="form-group">
+                                        <br>
+                                        <button type="button" id="btnAddRoom" class="btn btn-default bg-blue">+</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="table-responsive">
+
+                                    <table class="table table-bordered" id="tblItneraryDetails">
+                                        <thead>
+                                            <tr>
+                                                <th>Day - Destination - Nights</th>
+                                                <th>Description</th>
+                                                <th>Meal Type</th>
+                                                <th>Action</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Day 1 - Delhi (H. Nizamuddin) – Chandigarh - 1 Night</td>
+                                                <td>Joining and Leaving Tour Guests’ will meet directly at H. Nizamuddin station.</td>
+                                                <td>Dinner</td>
+                                                <td>Edit/Delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Day 2 - Chandigarh – Shimla - 2 Nights</td>
+                                                <td>Today we visit Rose Garden, Sukhana Lake, Rock Garden, Pinjore Garden.</td>
+                                                <td>Breakfast Lunch and Dinner</td>
+                                                <td>Edit/Delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Day 3 - Shimla - 1 Night</td>
+                                                <td>We visit Kufri – Winter Sports Capital, Indira Bungalow and Himalayan Zoo.</td>
+                                                <td>BreakFast</td>
+                                                <td>Edit/Delete</td>
+                                            </tr>
+
+                                        </thead>
+
+                                        <tbody></tbody>
+                                    </table>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-12">
+                    <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+                    <div class="panel box box-primary">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    Inclusions / Exclusions
+                                </a>
+                            </h4>
+                        </div>
+
+
+                        <div class="box-body">
+
+                            <div class="row">
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Inclusions</label><textarea class="form-control input-sm" name="Hotel.inclusions" placeholder="Enter Inclusions" maxlength="250"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Exclusions</label><textarea class="form-control input-sm" name="Hotel.exclusions" placeholder="Enter Exclusions" maxlength="250"></textarea>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-12">
+                    <!-- we are adding the .panel class so bootstrap.js collapse plugin detects it -->
+                    <div class="panel box box-primary">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    Tour Info
+                                </a>
+                            </h4>
+                        </div>
+
+
+                        <div class="box-body">
+
+
+                            <div class="row">
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Payment Terms</label><textarea class="form-control input-sm" name="Hotel.paymentModeDescription" placeholder="Enter Payment Mode Description" maxlength="250"></textarea>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Tour Requirements</label><textarea class="form-control input-sm" name="Hotel.tourRequirements" placeholder="Enter Tour Requirements" maxlength="250"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Things To Carry Along</label><textarea class="form-control input-sm" name="Hotel.terms&Condition" placeholder="Enter Things To Carry Along" maxlength="250"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Weather</label><textarea class="form-control input-sm" name="Hotel.terms&Condition" placeholder="Enter Weather" maxlength="250"></textarea>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Shopping</label><textarea class="form-control input-sm" name="Hotel.terms&Condition" placeholder="Enter Shopping" maxlength="250"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-12">
+                    <div class="panel box box-primary">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                    Additional Info
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div class="box-body">
+
+                            <div class="row">
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Terms & Condition</label><textarea class="form-control input-sm" name="Hotel.terms&Condition" placeholder="Enter Terms & Condition" maxlength="250"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Cancellation Details</label><textarea class="form-control input-sm" name="Hotel.cancellation" placeholder="Enter Cancellation" maxlength="250"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Route Changes /Postponement / Delay</label><textarea class="form-control input-sm" name="Hotel.routeChanges/Postponement/Delay" placeholder="Enter Route Changes /Postponement / Delay" maxlength="250"></textarea>
+                                    </div>
+                                </div>
+
+
+                               
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
                 <div class="btn-group">
+
                     <button type="button" class="btn btn-success active" id="btnsave">Save</button>
 
                     <button type="reset" class="btn btn-warning active" id="btnreset">Reset</button>
 
                     <button type="button" class="btn btn-danger active" id="btnback">Cancel</button>
+
                 </div>
             </div>
         </div>

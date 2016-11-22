@@ -1,1 +1,113 @@
 ﻿
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Vehicle Type</label>
+            <select id="drppackageType" class="form-control input-sm" name="Hotel.packageType">
+                <option value="">-Select Vehicle Type-</option>
+                <option value="">SUV</option>
+                <option value="">Sedan </option>
+                <option value="">Tempo Traveller</option>
+                <option value="">Bus</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Vehicle Name</label>
+            <input type="text" id="txtvehicleName" class="form-control input-sm" name="Hotel.vehicleName" placeholder="Enter Vehicle Name">
+        </div>
+    </div>
+
+
+
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Ticket Delivery</label>
+            <select id="drppackageType" class="form-control input-sm" name="Hotel.packageType">
+                <option value="">-Select Delivery Type-</option>
+                <option value="">Email</option>
+                <option value="">Office</option>
+                <option value="">Courier</option>
+            </select>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Adults Count</label><input type="text" id="txtAdultCount" class="form-control input-sm" name="Hotel.adultCount" placeholder="Enter adult count">
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Children Count</label><input type="text" id="txtChildrenCount" class="form-control input-sm" name="Hotel.ChildrenCount" placeholder="Enter Children count">
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Budget</label>
+            <input type="text" id="txtvehiclePrice" class="form-control input-sm" name="Hotel.vehiclePrice" placeholder="Enter Budget">
+        </div>
+    </div>
+
+
+    <div class="col-md-1">
+        <div class="form-group">
+            <br>
+            <button type="button" id="btnAddRoom" class="btn btn-default bg-blue">+</button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="table-responsive" style="width:100%; margin: 50px 0;">
+
+        <table class="table table-bordered" id="tblVehicleDetails">
+            <thead>
+                <tr>
+                    <th>Vehicle Type</th>
+                    <th>Vehicle Name</th>
+                    <th>Adults Count</th>
+                    <th>Children Count</th>
+                    <th>Budget</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>SUV</td>
+                    <td>Honda City</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>9000</td>
+                    <td>Edit/Delete</td>
+                </tr>
+                <tr>
+                    <td>Sedan</td>
+                    <td>BMW X5</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>20000</td>
+                    <td>Edit/Delete</td>
+                </tr>
+                <tr>
+                    <td>Bus</td>
+                    <td>Volvo</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>10500</td>
+                    <td>Edit/Delete</td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>

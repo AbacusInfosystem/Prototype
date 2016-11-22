@@ -23,6 +23,7 @@
     <!-- Main content -->
 
     <section class="content">
+
         <div class="box">
             <div class="box-header">
                 <h3 class="box-title">Quotation</h3>
@@ -40,7 +41,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        
+
                         <div class="btn-group">
                             <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModalViewCustomer">View Details</button>
                         </div>
@@ -145,38 +146,38 @@
                                             <button type="button" class="btn btn-success " data-toggle="modal" data-target="#myModalPackageDetails">Get Packages</button>
                                         </div>
                                     </div>
-									<div class="row">
-										 <div class="col-md-12">
-									<div class="table-responsive">
-										<table class="table table-bordered" id="tblRoomDetails">
-											<thead>
-												<tr>
-													
-													<th>Tour</th>
-													<th>Catgeory</th>
-													<th>Sub Category</th>
-													<th>Price</th>
-												</tr>
-												<tr>
-													
-													<td>Banglore - ooty</td>
-													<td>Domestic</td>
-													<td>Family</td>                
-													<td>18,000 per person</td>
-												</tr>
-												<tr>
-													
-													<td>Banglore</td>
-													<td>Domestic</td>
-													<td>Family</td>                
-													<td>13,000 per person</td>
-												</tr>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered" id="tblRoomDetails">
+                                                    <thead>
+                                                        <tr>
 
-											</thead>
-										</table>
-									</div>
-									</div>
-</div>
+                                                            <th>Tour</th>
+                                                            <th>Catgeory</th>
+                                                            <th>Sub Category</th>
+                                                            <th>Price</th>
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td>Banglore - ooty</td>
+                                                            <td>Domestic</td>
+                                                            <td>Family</td>
+                                                            <td>18,000 per person</td>
+                                                        </tr>
+                                                        <tr>
+
+                                                            <td>Banglore</td>
+                                                            <td>Domestic</td>
+                                                            <td>Family</td>
+                                                            <td>13,000 per person</td>
+                                                        </tr>
+
+                                                    </thead>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <!-- /.tab-pane -->
@@ -254,83 +255,7 @@
                                                 </div>
                                                 <div id="collapseFive" class="panel-collapse collapse">
                                                     <div class="box-body">
-
-                                                        <div class="row">
-
-                                                            <div class="table-responsive">
-
-                                                                <table class="table table-bordered" id="tblVehicleDetails">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>Vehicle Type</th>
-                                                                            <th>Vehicle Name</th>
-                                                                            <th>Vehicle Price</th>
-                                                                        </tr>
-                                                                    </thead>
-
-                                                                    <tr>
-                                                                        <td>Car</td>
-                                                                        <td>Honda City</td>
-                                                                        <td>9000</td>
-                                                                    </tr>
-
-                                                                    <tr>
-                                                                        <td>Bus</td>
-                                                                        <td>Volvo</td>
-                                                                        <td>20000</td>
-                                                                    </tr>
-
-
-                                                                    <tr>
-                                                                        <td>Sedan</td>
-                                                                        <td>Toyota Camry</td>
-                                                                        <td>10500</td>
-                                                                    </tr>
-
-                                                                    <tr>
-                                                                        <td colspan="3">
-                                                                            <div class="table-responsive">
-                                                                                <table class="table table-bordered" id="tblTrainDetails">
-                                                                                    <thead>
-                                                                                        <tr>
-                                                                                            <th>Vehicle Name</th>
-                                                                                            <th>Duration</th>
-                                                                                            <th>Price</th>
-                                                                                            <th>Action</th>
-                                                                                        </tr>
-
-                                                                                        <tr>
-                                                                                            <td>
-                                                                                                <div class="form-group">
-                                                                                                    <input type="text" placeholder="" class="form-control input-sm">
-                                                                                                </div>
-                                                                                            </td>
-                                                                                            <td>
-                                                                                                <div class="form-group">
-                                                                                                    <input type="text" placeholder="" class="form-control input-sm">
-                                                                                                </div>
-                                                                                            </td>
-                                                                                            <td>
-                                                                                                <div class="form-group">
-                                                                                                    <input type="text" placeholder="" class="form-control input-sm">
-                                                                                                </div>
-                                                                                            </td>
-                                                                                            <td>
-                                                                                                <button type="button" class="btn btn-default bg-blue">+</button>
-                                                                                            </td>
-                                                                                        </tr>
-                                                                                    </thead>
-                                                                                </table>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-
-                                                                    <tbody></tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-
-
+                                                        @{Html.RenderPartial("_CarQuotationDetails");}
                                                     </div>
                                                 </div>
                                             </div>
@@ -342,13 +267,13 @@
 
                                     <div class="row">
 
-                                        <div class="col-md-3">
+                                        <div class="col-md-2">
                                             <div class="form-group">
                                                 <label>Tour Start Date</label><input type="text" id="dtptourStartDate" class="form-control input-sm datepicker" name="Hotel.tourStartDate">
                                             </div>
                                         </div>
 
-                                        <div class="col-md-3">
+                                        <div class="col-md-2">
                                             <div class="form-group">
                                                 <label>From Location</label><input type="text" id="txtfromLocation" class="form-control input-sm" name="Hotel.fromLocation" placeholder="Enter From Location">
                                             </div>
@@ -362,6 +287,13 @@
                                         <div class="col-md-2">
                                             <div class="form-group">
                                                 <label>Children Count</label><input type="text" id="txtChildrenCount" class="form-control input-sm" name="Hotel.ChildrenCount" placeholder="Enter Children count">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label>Total Budget</label>
+                                                <input type="text" id="txtbudget" class="form-control input-sm" name="Hotel.budget" placeholder="Enter Budget">
                                             </div>
                                         </div>
 
@@ -461,83 +393,9 @@
                                                                             </h4>
                                                                         </div>
                                                                         <div id="DaycollapseSix" class="panel-collapse collapse">
-                                                                            <div class="box-body">                                                                     
+                                                                            <div class="box-body">
 
-                                                                                <div class="row">
-
-                                                                                    <div class="table-responsive">
-
-                                                                                        <table class="table table-bordered" id="tblVehicleDetails">
-                                                                                            <thead>
-                                                                                                <tr>
-                                                                                                    <th>Vehicle Type</th>
-                                                                                                    <th>Vehicle Name</th>
-                                                                                                    <th>Vehicle Price</th>
-                                                                                                </tr>
-                                                                                            </thead>
-
-                                                                                            <tr>
-                                                                                                <td>Car</td>
-                                                                                                <td>Honda City</td>
-                                                                                                <td>9000</td>
-                                                                                            </tr>
-
-                                                                                            <tr>
-                                                                                                <td>Bus</td>
-                                                                                                <td>Volvo</td>
-                                                                                                <td>20000</td>
-                                                                                            </tr>
-
-                                                                                           
-                                                                                            <tr>
-                                                                                                <td>Sedan</td>
-                                                                                                <td>Toyota Camry</td>
-                                                                                                <td>10500</td>
-                                                                                            </tr>
-
-                                                                                            <tr>
-                                                                                                <td colspan="3">
-                                                                                                    <div class="table-responsive">
-                                                                                                        <table class="table table-bordered" id="tblTrainDetails">
-                                                                                                            <thead>
-                                                                                                                <tr>
-                                                                                                                    <th>Vehicle Name</th>
-                                                                                                                    <th>Duration</th>
-                                                                                                                    <th>Price</th>
-                                                                                                                    <th>Action</th>
-                                                                                                                </tr>
-
-                                                                                                                <tr>
-                                                                                                                    <td>
-                                                                                                                        <div class="form-group">
-                                                                                                                            <input type="text" placeholder="" class="form-control input-sm">
-                                                                                                                        </div>
-                                                                                                                    </td>
-                                                                                                                    <td>
-                                                                                                                        <div class="form-group">
-                                                                                                                            <input type="text" placeholder="" class="form-control input-sm">
-                                                                                                                        </div>
-                                                                                                                    </td>
-                                                                                                                    <td>
-                                                                                                                        <div class="form-group">
-                                                                                                                            <input type="text" placeholder="" class="form-control input-sm">
-                                                                                                                        </div>
-                                                                                                                    </td>
-                                                                                                                    <td>
-                                                                                                                        <button type="button" class="btn btn-default bg-blue">+</button>
-                                                                                                                    </td>
-                                                                                                                </tr>
-                                                                                                            </thead>
-                                                                                                        </table>
-                                                                                                    </div>
-                                                                                                </td>
-                                                                                            </tr>
-
-                                                                                            <tbody></tbody>
-                                                                                        </table>
-                                                                                    </div>
-                                                                                </div>
-
+                                                                                @{Html.RenderPartial("_CarQuotationDetails");}
 
                                                                             </div>
                                                                         </div>
@@ -637,84 +495,10 @@
                                                                             </h4>
                                                                         </div>
                                                                         <div id="Day2collapseSix" class="panel-collapse collapse">
-                                                                         
+
                                                                             <div class="box-body">
 
-                                                                                <div class="row">
-
-                                                                                    <div class="table-responsive">
-
-                                                                                        <table class="table table-bordered" id="tblVehicleDetails">
-                                                                                            <thead>
-                                                                                                <tr>
-                                                                                                    <th>Vehicle Type</th>
-                                                                                                    <th>Vehicle Name</th>
-                                                                                                    <th>Vehicle Price</th>
-                                                                                                </tr>
-                                                                                            </thead>
-
-                                                                                            <tr>
-                                                                                                <td>Car</td>
-                                                                                                <td>Honda City</td>
-                                                                                                <td>9000</td>
-                                                                                            </tr>
-
-                                                                                            <tr>
-                                                                                                <td>Bus</td>
-                                                                                                <td>Volvo</td>
-                                                                                                <td>20000</td>
-                                                                                            </tr>
-
-
-                                                                                            <tr>
-                                                                                                <td>Sedan</td>
-                                                                                                <td>Toyota Camry</td>
-                                                                                                <td>10500</td>
-                                                                                            </tr>
-
-                                                                                            <tr>
-                                                                                                <td colspan="3">
-                                                                                                    <div class="table-responsive">
-                                                                                                        <table class="table table-bordered" id="tblTrainDetails">
-                                                                                                            <thead>
-                                                                                                                <tr>
-                                                                                                                    <th>Vehicle Name</th>
-                                                                                                                    <th>Duration</th>
-                                                                                                                    <th>Price</th>
-                                                                                                                    <th>Action</th>
-                                                                                                                </tr>
-
-                                                                                                                <tr>
-                                                                                                                    <td>
-                                                                                                                        <div class="form-group">
-                                                                                                                            <input type="text" placeholder="" class="form-control input-sm">
-                                                                                                                        </div>
-                                                                                                                    </td>
-                                                                                                                    <td>
-                                                                                                                        <div class="form-group">
-                                                                                                                            <input type="text" placeholder="" class="form-control input-sm">
-                                                                                                                        </div>
-                                                                                                                    </td>
-                                                                                                                    <td>
-                                                                                                                        <div class="form-group">
-                                                                                                                            <input type="text" placeholder="" class="form-control input-sm">
-                                                                                                                        </div>
-                                                                                                                    </td>
-                                                                                                                    <td>
-                                                                                                                        <button type="button" class="btn btn-default bg-blue">+</button>
-                                                                                                                    </td>
-                                                                                                                </tr>
-                                                                                                            </thead>
-                                                                                                        </table>
-                                                                                                    </div>
-                                                                                                </td>
-                                                                                            </tr>
-
-                                                                                            <tbody></tbody>
-                                                                                        </table>
-                                                                                    </div>
-                                                                                </div>
-
+                                                                                @{Html.RenderPartial("_CarQuotationDetails");}
 
                                                                             </div>
                                                                         </div>
@@ -742,7 +526,7 @@
 
                         <div class="row">
 
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Additional Information</label><textarea class="form-control input-sm" name="Hotel.additionalInfo" placeholder="Enter Additional Information" maxlength="250"></textarea>
                                 </div>
@@ -763,7 +547,7 @@
             </div>
 
         </div>
-</div>
+
     </section>
 </div>
 
@@ -847,13 +631,13 @@
 
                 @*<div class="btn-group">
 
-                    <button type="button" class="btn btn-success active" id="btnsave">Save</button>
+                        <button type="button" class="btn btn-success active" id="btnsave">Save</button>
 
-                    <button type="reset" class="btn btn-warning active" id="btnreset">Reset</button>
+                        <button type="reset" class="btn btn-warning active" id="btnreset">Reset</button>
 
-                    <button type="button" class="btn btn-danger active" id="btnback">Cancel</button>
+                        <button type="button" class="btn btn-danger active" id="btnback">Cancel</button>
 
-                </div>*@
+                    </div>*@
 
             </div>
         </div>
@@ -940,12 +724,11 @@
                 <h4 class="modal-title" id="AddCustomerLabel">Packages</h4>
             </div>
             <div class="modal-body" id="div_Parent_Modal_Body">
-				  @{Html.RenderPartial("_PackageDetails");}
+                @{Html.RenderPartial("_PackageDetails");}
             </div>
         </div>
     </div>
 </div>
-
 
 <div class="modal fade" id="myModalViewCustomer" role="dialog" aria-hidden="true">
     <div class="modal-dialog ">
