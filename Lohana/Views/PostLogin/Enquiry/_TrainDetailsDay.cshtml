@@ -1,0 +1,121 @@
+﻿
+
+
+<div class="row">
+
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Source</label>
+            <input type="text" id="txtSource" class="form-control input-sm" name="Hotel.source" placeholder="Enter Source">
+        </div>
+    </div>
+    
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Destination</label>
+            <input type="text" id="txtdestination" class="form-control input-sm" name="Hotel.destination" placeholder="Enter Destination">
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Ticket Type</label>
+            <select id="drppackageType" class="form-control input-sm" name="Hotel.packageType">
+                <option value="">-Select Ticket Type-</option>
+                <option value="">General</option>
+                <option value="">1 tier AC </option>
+                <option value="">2 tier Ac</option>
+                <option value="">3 tier AC </option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="col-md-2">
+        <div class="form-group">
+            <label>Departure Date</label>
+            <input type="text" id="txtLocation" class="form-control input-sm" name="Hotel.destination" placeholder="Enter Depart Date">
+        </div>
+    </div>
+
+    </div>
+
+<div class="row">
+
+   
+    
+    <div class="col-md-2">
+        <div class="form-group">
+            <label>Budget</label>
+            <input type="text" id="txtbudget" class="form-control input-sm" name="Hotel.budget" placeholder="Enter Budget">
+        </div>
+    </div>
+
+    <div class="col-md-1">
+        <div class="form-group">
+            <br>
+            <button type="button" id="btnAddRoom" class="btn btn-default bg-blue">+</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="table-responsive">
+        <table class="table table-bordered" id="tblRoomDetails">
+            <thead>
+                <tr>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Ticket Type</th>
+                    <th>Departure Date</th>
+                    <th>Adults Count</th>
+                    <th>Children Count</th>
+                    <th>Ticket Delivery</th>
+                    <th>Budget</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Mumbai</td>
+                    <td>Delhi</td>
+                    <td>General</td>
+                    <td>20-11-2016</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>Email</td>
+                    <td>4000</td>
+                    <td>Edit/Delete</td>
+                </tr>
+                <tr>
+                   
+                    <td>Delhi</td>
+                    <td>Kolkata</td>
+                    <td>1 tier AC</td>
+                    <td>1-12-2016</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>Office</td>
+                    <td>3000</td>
+                    <td>Edit/Delete</td>
+                </tr>
+                <tr>
+                    
+                    <td>Kolkata</td>
+                    <td>Chennai</td>
+                    <td>2 tier AC</td>
+                    <td>18-12-2016</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>Courier</td>
+                    <td>5000</td>
+                    <td>Edit/Delete</td>
+                </tr>
+
+            </thead>
+
+            <tbody></tbody>
+        </table>
+    </div>
+
+</div>

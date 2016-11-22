@@ -1220,6 +1220,11 @@
     <Content Include="Views\PostLogin\Quotation\_TrainQuotationDetails.cshtml" />
     <Content Include="Views\PostLogin\Quotation\_DestinationQuotationDetailsFacilities.cshtml" />
     <Content Include="Views\PostLogin\Quotation\_PackageDetails.cshtml" />
+    <Content Include="Views\PostLogin\Enquiry\_BusDetailsDay.cshtml" />
+    <Content Include="Views\PostLogin\Enquiry\_CarDetailsDay.cshtml" />
+    <Content Include="Views\PostLogin\Enquiry\_FlightDetailsDay.cshtml" />
+    <Content Include="Views\PostLogin\Enquiry\_HotelDetailsDay.cshtml" />
+    <Content Include="Views\PostLogin\Enquiry\_TrainDetailsDay.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -55,22 +55,28 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="radio" name="EnquiryType">
+                            <label> Package enquiry</label>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
                         <div class="form-group">
                             <input type="radio" name="EnquiryType">
                             <label> Quick enquiry</label>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <input type="radio" name="EnquiryType">
-                            <label> Custom enquiry</label>
+                            <label> Customise Travel Services</label>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <input type="radio" name="EnquiryType">
-                            <label> Preplanned enquiry</label>
+                            <label> Preplanned Holiday</label>
                         </div>
                     </div>
                 </div>
@@ -82,8 +88,8 @@
 
                             <ul class="nav nav-tabs">
                                 <li class="active"><a href="#tab_1" data-toggle="tab">Package Details</a></li>
-                                <li><a href="#tab_2" data-toggle="tab">Services</a></li>
-                                <li><a href="#tab_3" data-toggle="tab">Day Wise</a></li>
+                                <li><a href="#tab_2" data-toggle="tab"> Customise Travel Services</a></li>
+                                <li><a href="#tab_3" data-toggle="tab">Preplanned Holiday</a></li>
                                 @*<li><a href="#tab_4" data-toggle="tab">Additional Info</a></li>*@
 
                             </ul>
@@ -365,13 +371,13 @@
 
                                     <div class="row">
 
-                                        <div class="col-md-3">
+                                        <div class="col-md-2">
                                             <div class="form-group">
                                                 <label>Tour Start Date</label><input type="text" id="dtptourStartDate" class="form-control input-sm datepicker" name="Hotel.tourStartDate">
                                             </div>
                                         </div>
 
-                                        <div class="col-md-3">
+                                        <div class="col-md-2">
                                             <div class="form-group">
                                                 <label>From Location</label><input type="text" id="txtfromLocation" class="form-control input-sm" name="Hotel.fromLocation" placeholder="Enter From Location">
                                             </div>
@@ -386,6 +392,19 @@
                                             <div class="form-group">
                                                 <label>Children Count</label><input type="text" id="txtChildrenCount" class="form-control input-sm" name="Hotel.ChildrenCount" placeholder="Enter Children count">
                                             </div>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label>Ticket Delivery</label>
+                                                <select id="drppackageType" class="form-control input-sm" name="Hotel.packageType">
+                                                    <option value="">-Select Delivery Type-</option>
+                                                    <option value="">Email</option>
+                                                    <option value="">Office</option>
+                                                    <option value="">Courier</option>
+                                                </select>
+                                            </div>
+
                                         </div>
 
                                         <div class="col-md-1">
@@ -428,7 +447,7 @@
                                                                         <div id="DaycollapseTwo" class="panel-collapse collapse in">
                                                                             <div class="box-body">
 
-                                                                                @{Html.RenderPartial("_HotelDetails");}
+                                                                                @{Html.RenderPartial("_HotelDetailsDay");}
 
                                                                             </div>
                                                                         </div>
@@ -443,7 +462,7 @@
                                                                         </div>
                                                                         <div id="DaycollapseThree" class="panel-collapse collapse">
                                                                             <div class="box-body">
-                                                                                @{Html.RenderPartial("_TrainDetails");}
+                                                                                @{Html.RenderPartial("_TrainDetailsDay");}
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -457,7 +476,7 @@
                                                                         </div>
                                                                         <div id="DaycollapseFour" class="panel-collapse collapse">
                                                                             <div class="box-body">
-                                                                                @{Html.RenderPartial("_FlightDetails");}
+                                                                                @{Html.RenderPartial("_FlightDetailsDay");}
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -471,7 +490,7 @@
                                                                         </div>
                                                                         <div id="DaycollapseFive" class="panel-collapse collapse">
                                                                             <div class="box-body">
-                                                                                @{Html.RenderPartial("_BusDetails");}
+                                                                                @{Html.RenderPartial("_BusDetailsDay");}
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -527,16 +546,7 @@
 
                                                                                 <div class="row">
 
-                                                                                    <div class="col-md-3">
-                                                                                        <div class="form-group">
-                                                                                            <label>Adults Count</label><input type="text" id="txtAdultCount" class="form-control input-sm" name="Hotel.adultCount" placeholder="Enter adult count">
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-md-3">
-                                                                                        <div class="form-group">
-                                                                                            <label>Children Count</label><input type="text" id="txtChildrenCount" class="form-control input-sm" name="Hotel.ChildrenCount" placeholder="Enter Children count">
-                                                                                        </div>
-                                                                                    </div>
+                                                                                    
 
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group">
@@ -643,7 +653,7 @@
                                                                         <div id="Day2collapseTwo" class="panel-collapse collapse in">
                                                                             <div class="box-body">
 
-                                                                                @{Html.RenderPartial("_HotelDetails");}
+                                                                                @{Html.RenderPartial("_HotelDetailsDay");}
 
                                                                             </div>
                                                                         </div>
@@ -658,7 +668,7 @@
                                                                         </div>
                                                                         <div id="Day2collapseThree" class="panel-collapse collapse">
                                                                             <div class="box-body">
-                                                                                @{Html.RenderPartial("_TrainDetails");}
+                                                                                @{Html.RenderPartial("_TrainDetailsDay");}
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -672,7 +682,7 @@
                                                                         </div>
                                                                         <div id="Day2collapseFour" class="panel-collapse collapse">
                                                                             <div class="box-body">
-                                                                                @{Html.RenderPartial("_FlightDetails");}
+                                                                                @{Html.RenderPartial("_FlightDetailsDay");}
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -686,7 +696,7 @@
                                                                         </div>
                                                                         <div id="Day2collapseFive" class="panel-collapse collapse">
                                                                             <div class="box-body">
-                                                                                @{Html.RenderPartial("_BusDetails");}
+                                                                                @{Html.RenderPartial("_BusDetailsDay");}
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -742,16 +752,7 @@
 
                                                                                 <div class="row">
 
-                                                                                    <div class="col-md-3">
-                                                                                        <div class="form-group">
-                                                                                            <label>Adults Count</label><input type="text" id="txtAdultCount" class="form-control input-sm" name="Hotel.adultCount" placeholder="Enter adult count">
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-md-3">
-                                                                                        <div class="form-group">
-                                                                                            <label>Children Count</label><input type="text" id="txtChildrenCount" class="form-control input-sm" name="Hotel.ChildrenCount" placeholder="Enter Children count">
-                                                                                        </div>
-                                                                                    </div>
+                                                                                
 
                                                                                     <div class="col-md-3">
                                                                                         <div class="form-group">
@@ -841,18 +842,6 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Additional Information</label><textarea class="form-control input-sm" name="Hotel.additionalInfo" placeholder="Enter Additional Information" maxlength="250"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Status of Enquiry</label><select id="drpstatusOfEnquiry" class="form-control input-sm" name="Hotel.statusOfEnquiry">
-                                        <option>-Select Status Of Enquiry-</option>
-                                        <option>Started</option>
-                                        <option>In Progress</option>
-                                        <option>Completed</option>
-                                        <option>Closed</option>
-                                    </select>
                                 </div>
                             </div>
                         </div>
