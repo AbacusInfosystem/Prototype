@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Lohana</RootNamespace>
     <AssemblyName>Lohana</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -189,9 +189,9 @@
     <Compile Include="Controllers\PostLogin\HomeController.cs" />
     <Compile Include="Controllers\PostLogin\HotelController.cs" />
     <Compile Include="Controllers\PostLogin\PackageController.cs" />
+    <Compile Include="Controllers\PostLogin\QuotationController.cs" />
     <Compile Include="Controllers\PostLogin\VendorController.cs" />
     <Compile Include="Controllers\PreLogin\LoginController.cs" />
-    <Compile Include="Controllers\QuotationController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

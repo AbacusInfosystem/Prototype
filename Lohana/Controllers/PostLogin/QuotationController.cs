@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Lohana.Controllers
+namespace Lohana.Controllers.PostLogin
 {
     public class QuotationController : Controller
     {
@@ -12,10 +12,6 @@ namespace Lohana.Controllers
         // GET: /Quotation/
 
         public ActionResult Index()
-        {
-            return View();
-        }
-        public ActionResult Search()
         {
             return View();
         }
