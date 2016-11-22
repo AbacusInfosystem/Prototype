@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <br>
+                        
                         <div class="btn-group">
                             <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModalViewCustomer">View Details</button>
                         </div>
@@ -142,10 +142,41 @@
 
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <button type="button" class="btn btn-success ">Get Packages</button>
+                                            <button type="button" class="btn btn-success " data-toggle="modal" data-target="#myModalPackageDetails">Get Packages</button>
                                         </div>
                                     </div>
+									<div class="row">
+										 <div class="col-md-12">
+									<div class="table-responsive">
+										<table class="table table-bordered" id="tblRoomDetails">
+											<thead>
+												<tr>
+													
+													<th>Tour</th>
+													<th>Catgeory</th>
+													<th>Sub Category</th>
+													<th>Price</th>
+												</tr>
+												<tr>
+													
+													<td>Banglore - ooty</td>
+													<td>Domestic</td>
+													<td>Family</td>                
+													<td>18,000 per person</td>
+												</tr>
+												<tr>
+													
+													<td>Banglore</td>
+													<td>Domestic</td>
+													<td>Family</td>                
+													<td>13,000 per person</td>
+												</tr>
 
+											</thead>
+										</table>
+									</div>
+									</div>
+</div>
                                 </div>
 
                                 <!-- /.tab-pane -->
@@ -1188,7 +1219,7 @@
                     </div>
                 </div>
 
-                <div class="btn-group">
+                @*<div class="btn-group">
 
                     <button type="button" class="btn btn-success active" id="btnsave">Save</button>
 
@@ -1196,7 +1227,7 @@
 
                     <button type="button" class="btn btn-danger active" id="btnback">Cancel</button>
 
-                </div>
+                </div>*@
 
             </div>
         </div>
@@ -1206,7 +1237,7 @@
 
 @*View Customer*@
 
-<div class="modal fade" id="myModalViewCustomer" role="dialog" aria-hidden="true">
+<div class="modal fade" id="myModalPackages" role="dialog" aria-hidden="true">
     <div class="modal-dialog ">
         <div class="modal-content">
             <div class="modal-header">
@@ -1270,6 +1301,20 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModalPackageDetails" role="dialog" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="AddCustomerLabel">Packages</h4>
+            </div>
+            <div class="modal-body" id="div_Parent_Modal_Body">
+				  @{Html.RenderPartial("_PackageDetails");}
             </div>
         </div>
     </div>
