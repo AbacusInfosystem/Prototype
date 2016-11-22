@@ -1219,6 +1219,7 @@
     <Content Include="Views\PostLogin\Quotation\_FlightQuotationDetails.cshtml" />
     <Content Include="Views\PostLogin\Quotation\_TrainQuotationDetails.cshtml" />
     <Content Include="Views\PostLogin\Quotation\_DestinationQuotationDetailsFacilities.cshtml" />
+    <Content Include="Views\PostLogin\Quotation\_PackageDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
