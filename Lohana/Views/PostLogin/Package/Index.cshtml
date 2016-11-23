@@ -116,9 +116,17 @@
 
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label>Place To Visit </label><input type="text" id="txtplaceToVisit" class="form-control input-sm" name="Hotel.placeToVisit" placeholder="Enter Place To Visit ">
+                                        <label>Means To Transport </label><select id="drpmeansToTransport" class="form-control input-sm" name="Hotel.meansToTransport">
+                                            <option>Select Means To Transport</option>
+                                            <option>Flight</option>
+                                            <option>Cruise</option>
+                                            <option>Bus</option>
+                                            <option>Rail</option>
+                                            <option>Car</option>
+                                        </select>
                                     </div>
                                 </div>
+
                             </div>
 
                             <div class="row">
@@ -134,41 +142,31 @@
                                     </div>
                                 </div>
 
+
+
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label>Means To Transport </label><select id="drpmeansToTransport" class="form-control input-sm" name="Hotel.meansToTransport">
-                                            <option>Select Means To Transport</option>
-                                            <option>Flight</option>
-                                            <option>Cruise</option>
-                                            <option>Bus</option>
-                                            <option>Rail</option>
-                                            <option>Car</option>
+                                        <label>Place To Visit </label><textarea class="form-control input-sm" name="Hotel.placeToVisit" placeholder="Enter Place To Visit" maxlength="250"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Departure City </label><select id="drpmeansToTransport" class="form-control input-sm" name="Hotel.meansToTransport">
+                                            <option>Select City</option>
+                                            <option>Mumbai</option>
+                                            <option>Banglore</option>
+                                            <option>Delhi</option>
+                                            <option>Chennai</option>
+                                            <option>Jaipur</option>
                                         </select>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>Tour Reporting Point</label><input type="text" id="txttourReportingPoint" class="form-control input-sm" name="Hotel.tourReportingPoint" placeholder="Enter Tour Reporting Point">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>Tour Dropping </label><input type="text" id="txttourDropping" class="form-control input-sm" name="Hotel.tourDropping" placeholder="Enter Tour Dropping ">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>Point</label><input type="text" id="txtpoint" class="form-control input-sm" name="Hotel.point" placeholder="Enter Point">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Tour Start Date</label><input type="text" id="dtptourStartDate" class="form-control input-sm datepicker" name="Hotel.tourStartDate" placeholder="Enter Tour Start Date">
@@ -183,6 +181,24 @@
                                 </div>
 
                             </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Tour Reporting Point</label><input type="text" id="txttourReportingPoint" class="form-control input-sm" name="Hotel.tourReportingPoint" placeholder="Enter Tour Reporting Point">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Tour Dropping Point </label><input type="text" id="txttourDropping" class="form-control input-sm" name="Hotel.tourDropping" placeholder="Enter Tour Dropping ">
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
 
 
                         </div>
@@ -260,18 +276,24 @@
                             <div class="row">
 
 
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="form-group">
                                         <label>Day – Destination - Night</label><input type="text" id="txtday–Destination" class="form-control input-sm" name="Hotel.day–Destination" placeholder="Enter Day – Destination - Night">
                                     </div>
                                 </div>
 
-                                <div class="col-md-4">
+                                <div class="col-md-2">
                                     <div class="form-group">
-                                        <label>Description</label><textarea class="form-control input-sm" name="Hotel.description" placeholder="Enter Description" maxlength="250"></textarea>
+                                        <label>Hotel</label><input type="text" id="txthotel" class="form-control input-sm" name="Hotel.hotelName" placeholder="Enter Hotel">
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Sight Seeing</label><textarea class="form-control input-sm" name="Hotel.description" placeholder="Enter Description" maxlength="250"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
                                     <div class="form-group">
                                         <label>Type Of Meal </label><select id="drpmeansToTransport" class="form-control input-sm" name="Hotel.meansToTransport">
                                             <option>Select Type Of Meal</option>
@@ -281,6 +303,7 @@
                                             <option>Breakfast Lunch and Dinner</option>
                                             <option>Lunch and Dinner</option>
                                             <option>Breakfast and Dinner</option>
+                                            <option>No Meals</option>
                                         </select>
                                     </div>
                                 </div>
@@ -303,24 +326,28 @@
                                         <thead>
                                             <tr>
                                                 <th>Day - Destination - Nights</th>
-                                                <th>Description</th>
+                                                <th>Hotel Name</th>
+                                                <th>Sight Seeing</th>
                                                 <th>Meal Type</th>
                                                 <th>Action</th>
                                             </tr>
                                             <tr>
-                                                <td>Day 1 - Delhi (H. Nizamuddin) – Chandigarh - 1 Night</td>
+                                                <td>Day 1 - Delhi – Chandigarh - 1 Night</td>
+                                                <td>Lalit</td>
                                                 <td>Joining and Leaving Tour Guests’ will meet directly at H. Nizamuddin station.</td>
                                                 <td>Dinner</td>
                                                 <td>Edit/Delete</td>
                                             </tr>
                                             <tr>
                                                 <td>Day 2 - Chandigarh – Shimla - 2 Nights</td>
+                                                <td>Sofitel</td>
                                                 <td>Today we visit Rose Garden, Sukhana Lake, Rock Garden, Pinjore Garden.</td>
                                                 <td>Breakfast Lunch and Dinner</td>
                                                 <td>Edit/Delete</td>
                                             </tr>
                                             <tr>
                                                 <td>Day 3 - Shimla - 1 Night</td>
+                                                <td>Westin</td>
                                                 <td>We visit Kufri – Winter Sports Capital, Indira Bungalow and Himalayan Zoo.</td>
                                                 <td>BreakFast</td>
                                                 <td>Edit/Delete</td>
@@ -473,7 +500,7 @@
                                 </div>
 
 
-                               
+
 
                             </div>
 
